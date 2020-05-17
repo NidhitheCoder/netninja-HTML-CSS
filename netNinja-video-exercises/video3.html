@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sample <strong>page</strong></title>
+  </head>
+
+  <body>
+    <h1>html forms</h1>
+    <form>
+      <label for="txt_username">Enter username : </label>
+      <input type="text" id="txt_username" required /><br />
+      <label for="txt_email">Enter email : </label>
+      <input type="email" id="txt_email" />
+      <br />
+      <br />
+
+      <p>select your age category :</p>
+      <input type="radio" name="=age" id="option-1" value="0-20" />
+      <label for="option-1">0-20</label><br />
+      <input type="radio" name="=age" id="option-2" value="20-50" />
+      <label for="option-2">20-50</label><br />
+      <input type="radio" name="=age" id="option-3" value="50+" />
+      <label for="option-3">50+</label><br />
+      <br />
+
+      <label for="question">security question : </label>
+      <select name="question id=question">
+        <option value="1">one</option>
+        <option value="2">two</option>
+        <option value="3">three</option>
+      </select>
+
+      <label for="pair">enter pair : </label>
+      <input type="text" id="pair" /><br />
+      <br />
+      <label for="bio">your bio : </label>
+      <textarea
+        name="bio"
+        id="bio"
+        cols="30"
+        rows="20"
+        placeholder="about..."
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
