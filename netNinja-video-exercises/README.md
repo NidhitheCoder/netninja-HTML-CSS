@@ -7,10 +7,10 @@ video tutorial 1
     - CSS is used to control presentation, formatting, and layout.
 - css used to make web pages with good look.feel look better
 - basic tags 
-    <!DOCTYPE>
-    <HTML>
-    <HEAD>
-    <BODY>
+    !DOCTYPE
+    HTML
+    HEAD
+    BODY
 - how to inspect an element
 
 
@@ -18,31 +18,31 @@ video tutorial 2
 *****************
 
 - Tags
-    <strong>  - used to represent the important text of a document on the browser.
-    <em>  - emphasized text
-    <small>  -  emphasized
-    <h1>,<h2>....,<h6> - heading tags
-    <ul> - unordered list(dots,bullets,circle,sqare, etc..)
-    <ol> - ordered list(numbers,Alphabets,roman letters, etc..)
-    <div> -  division or a section in an HTML document.(divide pages into sections)
-    <hr> - drow a horizontal line
-    <br> - breaking tag for break to next line
-    <img> - used to add images to the document.(main attributes src,alt)
-    <span> - an inline container used to mark up a part of a text
-    <blockquote> - specifies a section that is quoted from another source.
+    strong tag  - used to represent the important text of a document on the browser.
+    em  - emphasized text
+    small  -  emphasized
+    h1,h2....,h6 - heading tags
+    ul - unordered list(dots,bullets,circle,sqare, etc..)
+    ol - ordered list(numbers,Alphabets,roman letters, etc..)
+    div -  division or a section in an HTML document.(divide pages into sections)
+    hr - drow a horizontal line
+    br - breaking tag for break to next line
+    img - used to add images to the document.(main attributes src,alt)
+    span - an inline container used to mark up a part of a text
+    blockquote - specifies a section that is quoted from another source.
 - define styles
--comments - <!-- some comments -->
+-comments - !-- some comments --
 
 
 video 3 tutorial 
 ****************
 
 - Tags
-    <form> - used to create an HTML form for user input
-    <label> -display instriction texts or texts
+    form - used to create an HTML form for user input
+    label -display instriction texts or texts
        - attributes- name,id,for etc..
        - for attributes helps to findout which element is represented by specific label 
-    <input> -an input field where the user can enter data
+    input -an input field where the user can enter data
         main attributes- types,name etc..
         type attribute -(values - radio,text,password,email,etc ..)
 - name attribute is important when using radio type,becouse of it helps group radio inputs
@@ -52,8 +52,8 @@ video 4 tutorials
 *****************
 
 - how to use css
-- <link> -a link between a document and an external resource
-    - usage -<link rel="stylesheet" href="style.css" />
+- link -a link between a document and an external resource
+    - usage -link rel="stylesheet" href="style.css" /
 - rel - specify relationship between the two documents.
 - href - href attribute specifies the URL of the page the link goes to.
 - units of measurements in css - px,em,%,cm,ex,in,am,pc,pt etc..
@@ -74,9 +74,9 @@ video 4 tutorials
 - text-shadow - --px --px colour;
 - we can pic colour in hexa codes -(#ffffff for white)
 - inline elements - it displayed contents space
-    - <span>,<img>,<strong>,<em> etc..
+    - span,img,strong,em etc..
 - block level tags - it need full width space
-    - <p>,<div>,<h1>,<h2>
+    - p,div,h1,h2
     - in defaut disply:block
 - margin and padding(margin refer outer space of an element padding refer inner space)
 - margin become collapse together and bigger value is applied.
