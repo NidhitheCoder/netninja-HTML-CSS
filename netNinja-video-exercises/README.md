@@ -116,6 +116,18 @@
 ## video 7 tutorial - chrome dev tools
 *************************************
 
+- delete,edit and hide elements in inpect window
+- check and uncheck css styles using inspect window
+- save changes using file system
+    -> source
+    -> filesystem
+    -> select file folder
+    -> made changes
+    -> ctrl+s to save
+- familier with inspect headings
+    -source,inspctor,network,console etc..
+- how to view same webpage into different devices using inspect element.
+
 ## video 8 tutorial - css layout & position
 ******************************************
 
