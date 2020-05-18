@@ -1,5 +1,7 @@
-video tutorial 1
-***********************
+# HTML & CSS Crash Course Tutorial
+
+## video tutorial 1 - introduction
+*********************************
 - what is html(hypertext markup language)
     - HTML provides the basic structure of sites.
 - what is css (cascading style sheet)
@@ -13,8 +15,8 @@ video tutorial 1
 - how to inspect an element
 
 
-video tutorial 2
-*****************
+## video tutorial 2 - html basics 
+********************************
 - Tags
     - strong tag  - used to represent the important text of a document on the browser.
     - em  - emphasized text
@@ -32,8 +34,8 @@ video tutorial 2
 - comments - !-- some comments --
 
 
-video 3 tutorial 
-****************
+## video 3 tutorial - html forms
+********************************
 - Tags
     - form - used to create an HTML form for user input
     - label -display instriction texts or texts
@@ -45,8 +47,8 @@ video 3 tutorial
 - name attribute is important when using radio type,becouse of it helps group radio inputs
 
 
-video 4 tutorials
-*****************
+## video 4 tutorials - css basics
+********************************
 - how to use css
 - link -a link between a document and an external resource
     - usage -link rel="stylesheet" href="style.css" /
@@ -68,7 +70,7 @@ video 4 tutorials
     - we can specify which border we need to style like - border-bottom
 - css comments - /* some texts */
 - text-shadow - --px --px colour;
-- we can pic colour in hexa codes -(#ffffff for white)
+- we can pic colour in hexa codes -(##ffffff for white)
 - inline elements - it displayed contents space
     - span,img,strong,em etc..
 - block level tags - it need full width space
@@ -78,15 +80,15 @@ video 4 tutorials
 - margin become collapse together and bigger value is applied.
 
 
-video 5 tutorials 
-******************
+## video 5 tutorials - css classes and selectors
+***********************************************
 
 - classname
 - selector
 - p.error- p tags only affect error class styles
 - we can use mutliple classes like - p.error.name
-- we can select items by id -#name
-    eg #name{ we can style here for an element with id name}
+- we can select items by id -##name
+    eg ##name{ we can style here for an element with id name}
 - inner selecter - div p{we can style here for p element that inside a div}
 - attribute selector - a[href]{we can style here for an a tag have href attribute}
 - text-transform - for text transforming
@@ -98,3 +100,30 @@ video 5 tutorials
 - inherit- this property helps to inherit properties from parents
     - eg. margin:inherit
 - we can ovwrride styles inherited from parent elemets using write its own properties to child elementss
+
+
+## video 6 tutorial - html5 semantics
+************************************
+
+- semantic tags clearly describes its meaning to both the browser and the developer. 
+    - article tag -which makeup an article
+    - main tag - for main content
+    - section tag - to make certain section
+    - aside tag - related to something else
+    - header tag - for giving heading
+    - footer tag - for giving footer
+
+## video 7 tutorial - chrome dev tools
+*************************************
+
+## video 8 tutorial - css layout & position
+******************************************
+
+## video 9 tutorial - psudo classes & elements
+*********************************************
+
+## video 10 tutorial - intro to media queries
+********************************************
+
+## video 11 tutorial - next steps
+**********************************
