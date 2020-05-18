@@ -152,6 +152,18 @@
 ## video 9 tutorial - psudo classes & elements
 *********************************************
 
+- psudo classes
+- style elements when they are in a particular state
+    -hover,focus,first-child,valid,
+- outline - reomove outer lines of elements
+- all class psudo elements   -11:46
+    - ::after
+    - ::before
+    - ::first-letter
+    - ::first-line
+    - ::selection
+
+
 ## video 10 tutorial - intro to media queries
 ********************************************
 
