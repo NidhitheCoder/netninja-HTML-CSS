@@ -132,6 +132,23 @@
 ## video 8 tutorial - css layout & position
 ******************************************
 
+- position
+    - values-static,relative,fixed,absolute,sticky
+- familier %,em unit measurement
+- em inherit parent attribute value and it take as 1 .  (13.21)
+    - eg. parent element :10px, child element:1.5 em (15px)
+- z-index
+    - z index is morethan then forward this element
+    - z index is lessthan then backward this element
+- padding:--px --px (usage)
+- border-radious - helps to change border shape
+- white-space
+- max-width
+- margin 
+    -auto keyword automatically adjusted spaces
+- box-sizing
+- line-height 
+
 ## video 9 tutorial - psudo classes & elements
 *********************************************
 
