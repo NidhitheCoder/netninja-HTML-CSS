@@ -167,5 +167,14 @@
 ## video 10 tutorial - intro to media queries
 ********************************************
 
+- responsive design
+- media queries- tell the browser how to an element at particular viewport dimensions
+    - max-width and min-width
+    - @media screen and(max-width:1000px) means below 1000 px what styles elements have
+- viewport meta tag- tell the browser what width the viewport sholud be
+    - eg. <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+- responsive images - smaller images for mobile device
+
+
 ## video 11 tutorial - next steps
 **********************************
