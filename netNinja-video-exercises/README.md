@@ -128,6 +128,7 @@
     -source,inspctor,network,console etc..
 - how to view same webpage into different devices using inspect element.
 
+
 ## video 8 tutorial - css layout & position
 ******************************************
 
