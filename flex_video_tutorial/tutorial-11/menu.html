@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NetNinja tutorial 11</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="=https://code.jquery.com/jquery-1.12.1.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">about</a></li>
+          <li><a href="">store</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+        <ul class="browser">
+          <li><a href="" class="ch">chrome</a></li>
+          <li><a href="" class="mz">mozilla</a></li>
+        </ul>
+      </nav>
+      <div style="margin: 20px">
+        <span>layout :</span>
+        <a href="#" class="stack">stack</a>
+        <a href="#" class="grid">grid</a>
+      </div>
+      <section id="blocks">
+        <article>
+          <h2>
+            cool
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+            molestiae pariatur optio vero aut rem reprehenderit a ea autem
+            ipsam. Illo, dolores deserunt quibusdam eius ipsa atque illum
+            voluptate corrupti.
+          </p>
+        </article>
+        <article>
+          <h2>nice</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            ullam dolorem commodi porro amet saepe dignissimos vel delectus rem
+            accusantium voluptas non adipisci nesciunt distinctio, quisquam
+            explicabo iure, eaque autem.
+          </p>
+        </article>
+        <article>
+          <h2>beauty</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+            nihil saepe enim quis sequi laborum tempore non expedita vitae fuga,
+            aut, qui perferendis incidunt! Quia officia eligendi accusantium
+            aspernatur ratione?
+          </p>
+        </article>
+        <article>
+          <h2>fantastic</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
+            magnam ullam quam aliquid voluptas voluptates repellendus, sunt
+            neque nemo consectetur natus iste consequatur cupiditate beatae
+            delectus necessitatibus enim repudiandae. Eligendi!
+          </p>
+        </article>
+        <article>
+          <h2>awsome</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quia
+            dignissimos cumque eum tenetur, voluptates tempore ea, corrupti
+            explicabo mollitia deleniti repellat animi facilis est laborum
+            labore, excepturi ipsa numquam.
+          </p>
+        </article>
+        <article>
+          <h2>pretty</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+            dolore modi quam et ratione, quia quas voluptatibus ea repellendus
+            impedit earum corporis harum obcaecati beatae dignissimos culpa
+            consequuntur ex expedita.
+          </p>
+        </article>
+      </section>
+    </div>
+    <script>
+      $("a.stack").on("click", function() {
+        $("article").addClass("stack");
+      });
+      $("a.grid").on("click", function() {
+        $("article").removeClass("stack");
+      });
+    </script>
+  </body>
+</html>
