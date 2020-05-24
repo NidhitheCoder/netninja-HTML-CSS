@@ -1,0 +1,30 @@
+body{
+    background:#eee;    
+}
+.wrapper{
+    width:100%;
+    max-width: 960px;
+}
+.flex-container{
+    display:flex;
+    background:white;
+}
+/* .flex-container::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+.box{
+height:100px;
+    min-width: 100px;
+    /* float: left; */
+}
+.one{
+background:red;
+}
+.two{
+background:green;
+}
+.three{
+background:blue;
+}

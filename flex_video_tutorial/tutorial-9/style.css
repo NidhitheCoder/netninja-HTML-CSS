@@ -1,0 +1,31 @@
+body{
+    background:#eee;    
+}
+.wrapper{
+    width:100%;
+    max-width: 1400px;
+}
+.flex-container{
+    display:flex;
+    background:white;
+    flex-wrap: wrap;
+    /* flex-flow: row; */
+    flex-flow: row-reverse;
+    justify-content: flex-start;
+    /* justify-content: flex-end;  */
+    height: 100px;
+}
+
+.box{
+height:100px;
+   flex: 0 0 100px;
+}
+.one{
+background:red;
+}
+.two{
+background:green;
+}
+.three{
+background:blue;
+}
