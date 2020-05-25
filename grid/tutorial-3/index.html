@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>using grid video-3</title>
+        <style>
+            body{
+                color:#fff;
+                text-align:center;
+            }
+            #content{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                /* grid-auto -rows: 200px; 
+                grid-auto-rows: minmax(200px,auto); */
+                grid-template-rows:100px 200px 300px;
+                grid-template-rows: repeat(10,minmax(200px,auto));
+                /* grid-column-gap: 10px;
+                grid-row-gap: 10px; */
+                grid-gap:10px;
+                max-width: 960px;
+                margin: 0 auto;
+            }
+            #content div{
+                background:#3bbced;
+                padding:30px;
+                /* margin:20px; */
+            }
+            #content div:nth-child(even){
+                background: #777;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nihil beatae animi sit vitae! Id beatae nam facere ducimus odit delectus architecto vero, ullam reprehenderit officiis, velit iusto eius magni.</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+
+        </div>
+    </body>
+</html>
