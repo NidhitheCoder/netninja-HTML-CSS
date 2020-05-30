@@ -1,0 +1,10 @@
+.content p{
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+    -webkit-column-rule: 1px solid red;
+    column-rule: 1px solid red;
+    text-align: justify;
+    background-color: green;
+}

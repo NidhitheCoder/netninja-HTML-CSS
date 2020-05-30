@@ -1,0 +1,41 @@
+.wrapper{
+    background:cyan;
+    min-width:960px;
+    margin:0 auto;
+    padding:20px;
+}
+.service p,h2{
+color:#999;
+margin:10px 0;
+text-align: center;
+
+}
+.service{
+float:left;
+background:#eee;
+width:29.33%;
+margin:1%;
+height:1%;
+}
+.content{
+    padding:10px;
+    clear:right;
+    margin-top: 20px 1%;
+}
+.services ::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+aside,section{
+    float: left;
+    width:46%;
+    margin:1%;
+    padding:1%;
+    background:#f2f2f2;
+}
+.coloumn::after{
+    display: block;
+    content:"";
+    clear:both;
+}

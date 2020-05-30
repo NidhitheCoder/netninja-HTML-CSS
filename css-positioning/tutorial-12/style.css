@@ -1,0 +1,23 @@
+.service{
+    display: inline-block;
+    margin:50px;
+    background: coral;
+    padding:10px;
+    position:relative;
+}
+
+.service :nth-child(2){
+    top:10px;
+
+}
+.service:nth-child(3){
+    top:15px;
+}
+.service:nth-child(4){
+    top:20px;
+}
+.services{
+    border:1px solid cyan;
+    max-height: 150px;
+    overflow: hidden;
+}
