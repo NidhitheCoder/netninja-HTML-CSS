@@ -1,0 +1,31 @@
+.wrapper{
+    background:cyan;
+    min-width: 960px;
+    margin:0 auto;
+    padding:20px;
+}
+.service p,h2{
+    color: #999;
+    margin:10px 0;
+    text-align: center;
+
+}
+.service{
+    float: left;
+    background:#eee;
+    width:29.33%;
+    margin:1%;
+    padding:1%;
+}
+.content{
+    padding:10px;
+    background:#ccc;
+    clear:right;
+    /* margin-top: 100px; */
+    margin-top: 50px;
+}
+.services::after{
+    content: "HELLO WORLD";
+    display: block;
+    clear:both;
+}

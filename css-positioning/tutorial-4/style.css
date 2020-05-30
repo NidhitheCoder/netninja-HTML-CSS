@@ -1,0 +1,50 @@
+.wrapper{
+/* background: grey; */
+background:cyan;
+max-width: 960px;
+margin:0 auto;
+padding:20px;
+
+}
+.wrapper::after{
+content:"";
+display: block;
+clear:both;
+}
+img{
+    float:right;
+    margin: 10px;
+}
+/* 2nd example */
+.red{
+    background:red;
+float: right;
+}
+.blue{
+    background:blue;
+    /* float:left; */
+    float: right;
+}
+.green{
+    background:green;
+  float:right;
+}
+.box{
+    height:100px;
+    width:100px;
+}
+/* 3rd example */
+
+.service h2,p{
+
+    color:#999;
+    margin:10px 0;
+    text-align: center;
+}
+.service{
+    float: left;
+    background:#eee;
+    width:29.33%;
+    margin:1%;
+    padding:1%;
+}
