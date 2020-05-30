@@ -50,7 +50,9 @@ nav li {
 .submenu a {
   color: #005ba1;
 }
-
+.secondmenu ul:nth-child(1){
+font-weight: 600;
+}
 #search {
   background: url(img/icons8-search-30.png) no-repeat scroll 1px 1px;
   padding-left: 40px;
