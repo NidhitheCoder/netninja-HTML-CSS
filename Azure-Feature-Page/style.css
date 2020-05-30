@@ -1,0 +1,505 @@
+body {
+  color: black;
+  text-align: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* navigation part */
+nav {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+nav img {
+  height: 23px;
+  width: 108;
+}
+nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: block;
+  padding: 5px;
+  white-space: nowrap;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+nav li {
+  flex: 1 1 0;
+  margin: 0 6px;
+}
+.mainMenu :nth-child(1) {
+  padding-left: 20px;
+}
+.mainMenu :nth-child(2) {
+  border-left: 2px solid gray;
+  font-weight: bold;
+}
+.hamIcon {
+  display: none;
+}
+.submenu a {
+  color: #005ba1;
+}
+
+#search {
+  background: url(img/icons8-search-30.png) no-repeat scroll 1px 1px;
+  padding-left: 40px;
+  height: 25px;
+  border: 1.5px solid lightgray;
+}
+#search:focus {
+  border: 3px solid #005ba1;
+}
+
+.submenu input:hover {
+  border: 1px solid #005ba1;
+  height: 23px;
+}
+.portal {
+  background: #fff;
+  border: 1px solid #005ba1;
+  height: 30px;
+}
+.portal:hover {
+  background: #005ba1;
+  height: 30px !important;
+}
+.freeAccount {
+  background: #005ba1;
+  color: #fff;
+  border: 1px solid #005ba1;
+  height: 30px;
+}
+.freeAccount:hover {
+  height: 30px !important;
+  background: #00518f;
+  border: 1px solid #00518f;
+}
+
+/* bookmark and share part */
+.bookmarkDiv {
+  text-align: right;
+  font-size: 12px;
+  padding: 6px 20px;
+}
+.bookmarkDiv img {
+  height: 20px;
+  width: 20px;
+  justify-content: center;
+}
+.dotmenu {
+  border: 1px solid lightgray;
+  width: 20px;
+  float: right;
+  text-align: center;
+  display: none;
+}
+
+/* blue background section */
+.firstBlue {
+  background: #005ba1;
+  height: 200px;
+  width: 100%;
+  max-width: 100%;
+  color: white;
+}
+.firstBlueChild {
+  max-width: 80%;
+  text-align: left;
+  padding: 50px;
+  font-weight: 400;
+}
+
+/* main div section */
+.mainDiv {
+  padding: 30px;
+}
+
+/* first grid or main grid  */
+.mainGrid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.mainGrid h2 {
+  color: rgb(0, 81, 143);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.mainGrid p {
+  color: rgb(94, 94, 94);
+  font-size: 12px;
+  font-weight: 400;
+}
+.mainGridChild {
+  height: 140px;
+  background: #fff;
+  border: 2px solid lightgray;
+  padding: 10px;
+}
+.mainGridChild:hover {
+  box-shadow: 2px 2px 12 grey;
+}
+.mainGridChild a {
+  text-decoration: none;
+}
+.innerGrid {
+  display: flex;
+  flex-direction: row;
+}
+.innerGrid img {
+  margin: 0;
+  height: 70px;
+  width: 70px;
+}
+
+/* browse azure products */
+.browseDiv {
+  padding: 50px;
+  background: #f2f2f2;
+}
+.browseDiv h2 {
+  text-align: left;
+}
+.browseGrid {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.browseGrid h3 {
+  text-align: left;
+  padding: 0;
+}
+.browseGrid ul {
+  list-style-type: none;
+  padding: 0;
+}
+.browseGrid div li:nth-child(2) {
+  border-bottom: 1px solid #e2dfdf;
+  background: #e2dfdf;
+}
+.browseGrid li {
+  outline: none !important;
+}
+.browseSelect {
+  display: none;
+}
+.browseGrid button {
+  width: 100%;
+  height: 30px;
+  border: transparent;
+  background-color: transparent;
+  color: #000;
+  font-weight: 400;
+  text-align: left;
+  outline: none;
+}
+.browseGrid button:hover {
+  background-color: #fafafa;
+}
+.browseDetails {
+  padding: 0 40px;
+}
+.browseListContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px;
+  text-align: left;
+}
+.browseListContainer div {
+  background: white;
+  padding: 15px 20px;
+}
+.browseListContainer h3 {
+  color: rgb(0, 81, 143);
+  font-size: 16px;
+  font-weight: 200px;
+}
+.browseListContainer img {
+  height: 48px;
+  width: 48px;
+}
+.browseListContainer p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+
+/* language and tools section */
+.languageDiv {
+  padding: 50px;
+}
+.languageDiv h3 {
+  text-align: left;
+}
+.language {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  color: rgb(0, 81, 143);
+  text-align: left;
+}
+.language div {
+  flex: 1 1 0;
+  background: #e3e3e3;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.language h3 {
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Segoe UI, SegoeUI, Segoe WP, Helvetica Neue, Helvetica, Tahoma,
+    Arial, sans-serif;
+}
+.language img {
+  height: 32px;
+  width: 32px;
+  padding: 10px;
+}
+
+/* sovergin clouds */
+.clouds {
+  background: #f2f2f2;
+  padding: 50px;
+  text-align: left;
+}
+.clouds h2 {
+  font-size: 26px;
+  font-weight: 500;
+}
+.cloudlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.cloudlist div {
+  flex: 1 1 0;
+  background: white;
+  padding: 20px;
+}
+.clouds h3 {
+  color: rgb(0, 81, 143);
+  font-size: 16px;
+  font-weight: 600;
+}
+.clouds p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+
+/* footer section */
+footer {
+  background: #e3e3e3;
+  padding: 50px;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footerLanguage {
+  margin-top: 5px;
+}
+.footerLanguage:hover {
+  color: grey;
+}
+footer ul {
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-row-gap: 20px;
+}
+
+footer a {
+  color: #171717;
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+footer button {
+  height: 25px;
+  font-size: 12px;
+  color: #171717;
+  background: #e3e3e3;
+  border: 1px solid #e3e3e3;
+  display: flex;
+  flex-direction: row;
+}
+footer button:hover {
+  border: 1px solid black;
+}
+footer a:hover {
+  text-decoration: underline !important;
+}
+footer img {
+  padding-top: 0;
+  height: 30px;
+  width: 30px;
+}
+footer button img {
+  height: 15px;
+  width: 15px;
+  padding: 5px;
+}
+footer button span {
+  padding-top: 5px;
+}
+
+/* media query */
+@media screen and (max-width: 1200px) {
+  footer ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mainGrid h2 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 560px) {
+  /* nav */
+  .mainDiv {
+    padding: 5px;
+  }
+  .mainMenu li:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+  .mainMenu li:nth-child(2),
+  .mainMenu li:nth-child(4),
+  .mainMenu li:nth-child(5),
+  .mainMenu li:nth-child(6),
+  .submenu {
+    display: none;
+  }
+  .secondmenu {
+    display: none;
+  }
+  .bookmarkDiv {
+    height: 50px;
+  }
+  .hamIcon {
+    display: block;
+    border: none !important;
+  }
+  /* bookmark */
+  .bookmarkDiv img,
+  .bookmarkDiv span {
+    display: none;
+  }
+  .dotmenu {
+    display: block !important;
+    padding: 10px;
+  }
+  /* firstblue */
+  .firstBlue {
+    height: 240px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .firstBlue h2 {
+    font-size: 33px;
+    font-weight: 400;
+  }
+  .firstBlueChild {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .firstBlueChild p {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+
+  /* main grid */
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+  .mainGrid div {
+    height: 80px;
+    text-align: left;
+  }
+  .mainGrid img {
+    display: none;
+  }
+  /* browse  */
+  .browseDiv {
+    padding: 20px;
+  }
+  .browseListContainer img,
+  .browseListContainer p {
+    display: none;
+  }
+  .browseListContainer {
+    grid-template-columns: 1fr;
+  }
+  .browseListContainer div {
+    background: #f2f2f2;
+    text-align: left;
+    padding: 0;
+    height: 30px;
+  }
+  .browseGrid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .browseSelect {
+    display: block;
+  }
+  #selectProducts {
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    background: white;
+    outline: none !important  ;
+  }
+  .browseGrid ul {
+    display: none;
+  }
+
+  /* language */
+  .language,
+  .cloudlist,
+  footer {
+    grid-template-columns: 1fr;
+  }
+  .language div {
+    text-align: left;
+    justify-content: left;
+  }
+
+  /* footer */
+  footer {
+    padding: 0px;
+    grid-gap: 5px;
+  }
+  footer div {
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  footer ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    padding: 20px;
+  }
+  footer li {
+    text-align: left;
+  }
+}
