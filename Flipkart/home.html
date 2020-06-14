@@ -91,6 +91,19 @@
         </div>
         <div></div>
       </nav>
+      <!-- mobile nav -->
+      <nav class="mobile-nav">
+        <div class="mobile-nav-subdiv">
+          <img src="img/mobile-arrow.png" class="mobile-img" />
+          <img src="img/mobile-logo.png" class="mobile-img" />
+          <a href="">Mi mobiles</a>
+        </div>
+        <div class="mobile-nav-subdiv">
+          <img src="img/search-white.png" class="mobile-img" />
+          <img src="img/shopping-cart.png" class="mobile-img" />
+          <a href>Login</a>
+        </div>
+      </nav>
 
       <!-- subnav part -->
       <div class="sub-nav">
@@ -240,20 +253,62 @@
             </div>
           </div>
         </span>
-        <span>TVs &Appliances</span>
-        <span>Men</span>
-        <span>Women</span>
-        <span>Baby & Kids</span>
-        <span>Home & Furniture</span>
-        <span>Sports,Books & More</span>
-        <a href=""><span>Flights</span></a>
-        <a href=""><span>Offer Zone</span></a>
+        <span>
+          <div class="dropdown">
+            <button class="btn-drop">TVs &Appliances</button>
+          </div>
+        </span>
+        <span>
+          <div class="dropdown">
+            <button class="btn-drop">Men</button>
+          </div>
+        </span>
+        <span>
+          <div class="dropdown">
+            <button class="btn-drop">Women</button>
+          </div>
+        </span>
+        <span>
+          <div class="dropdown">
+            <button class="btn-drop">Baby & Kids</button>
+          </div>
+        </span>
+        <span>
+          <div class="dropdown">
+            <button class="btn-drop">Home & Furniture</button>
+          </div>
+        </span>
+        <span>
+          <div class="dropdown">
+            <button class="btn-drop">Sports,Books & More</button>
+          </div>
+        </span>
+        <a href="">
+          <span>
+            <div class="dropdown">
+              <button class="btn-drop">Flights</button>
+            </div>
+          </span>
+        </a>
+        <a href="">
+          <span>
+            <div class="dropdown">
+              <button class="btn-drop">Offer Zone</button>
+            </div>
+          </span>
+        </a>
       </div>
 
       <!-- mobile sub nav -->
-      <div class="mobile-nav">
-        <div>sort </div>
-        <div>filter</div>
+      <div class="mobile-subnav">
+        <div>
+          <img src="img/sort.png" />
+          <span>Sort</span>
+        </div>
+        <div>
+          <img src="img/filter.png" />
+          <span>Filter</span>
+        </div>
       </div>
 
       <!-- main part -->
@@ -424,7 +479,7 @@
               </p>
             </div>
             <h4>Mi Mobiles</h4>
-            <p>(Showing 1-24 products of 24 products)</p>
+            <p>(Showing 1- 4 products of 24 products)</p>
             <div class="sorting-div">
               <div>
                 <span>Sort</span>
@@ -441,6 +496,11 @@
               </div>
               <div>
                 <div>
+                  <a href="">Price-Hight to Low</a>
+                </div>
+              </div>
+              <div>
+                <div>
                   <a href="">Newest First</a>
                 </div>
               </div>
@@ -452,231 +512,300 @@
             <!-- product 1 -->
             <div>
               <a href="">
-                <div class="product-show-div">
-                  <img src="img/products/1.jpeg" />
-                  <span>
-                    <input type="checkbox" value="compare" />
-                    <span> Add to Compare</span></span
-                  >
-                </div>
-                <img src="img/products/heart.png" class="heart" />
-                <div class="details-div">
-                  <div class="description-div">
-                    <h2>Redmi note 7 pro(Neptune Blue,128 GB)</h2>
-                    <div class="rating-reviews-div">
-                      <div class="rating-div ">
-                        <span class="btn-rating">4.5</span>
-                        <img src="img/products/star.png" />
-                        <div class="review-list">
-                          <div class="view-rating">
-                            <span
-                              >4.5 <img src="img/products/star-black.png"
-                            /></span>
-                            <div>2,67,845 Ratings & 22,523 Reviews</div>
-                          </div>
-                          <div>
-
-                            <div class="progress-container">
+                <div class="desktop">
+                  <div class="product-show-div">
+                    <img src="img/products/1.jpeg" />
+                    <span>
+                      <input type="checkbox" value="product1" />
+                      <span> Add to Compare</span>
+                    </span>
+                  </div>
+                  <img src="img/products/heart.png" class="heart" />
+                  <div class="details-div">
+                    <div class="description-div">
+                      <h2>Redmi note 7 pro(Neptune Blue,128 GB)</h2>
+                      <div class="rating-reviews-div">
+                        <div class="rating-div ">
+                          <span class="btn-rating">4.5</span>
+                          <img src="img/products/star.png" />
+                          <div class="review-list">
+                            <div class="view-rating">
                               <span
-                                >5<img src="img/products/star-black.png"
+                                >4.5 <img src="img/products/star-black.png"
                               /></span>
-                              <div class="progress-bar">
-                                <div
-                                  class="progress"
-                                  style="width: 100px;"
-                                ></div>
-                              </div>
-                              <span>1,82,499</span>
+                              <div>2,67,845 Ratings & 22,523 Reviews</div>
                             </div>
-
-                            <div class="progress-container">
-                              <span
-                                >4<img src="img/products/star-black.png"
-                              /></span>
-                              <div class="progress-bar">
-                                <div
-                                  class="progress"
-                                  style="width: 32px;"
-                                ></div>
-                              </div>
-                              <span>57,946</span>
-                            </div>
-
-                            <div class="progress-container">
-                              <span>3<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:8px">  
+                            <div>
+                              <div class="progress-container">
+                                <span
+                                  >5<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    13px
+                                    style="width: 100px;"
+                                  ></div>
                                 </div>
+                                <span>1,82,499</span>
                               </div>
-                              <span>14,187</span>
-                            </div>
 
-                            <div class="progress-container">
-                              <span>2<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:5px;background:orange !important">
+                              <div class="progress-container">
+                                <span
+                                  >4<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width: 32px;"
+                                  ></div>
                                 </div>
+                                <span>57,946</span>
                               </div>
-                              <span>4,592</span>
-                            </div>
 
-                            <div class="progress-container">
-                              <span>1<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:10px;background: orangered"></div>
+                              <div class="progress-container">
+                                <span
+                                  >3<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div class="progress" style="width:8px"></div>
+                                </div>
+                                <span>14,187</span>
                               </div>
-                              <span>11,808</span>
-                            </div>
 
+                              <div class="progress-container">
+                                <span
+                                  >2<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:5px;background:orange !important"
+                                  ></div>
+                                </div>
+                                <span>4,592</span>
+                              </div>
+
+                              <div class="progress-container">
+                                <span
+                                  >1<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:10px;background: orangered"
+                                  ></div>
+                                </div>
+                                <span>11,808</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
+                        <span>2,67,845 Ratings & 22,523 Reviews</span>
+                        <!-- mobile view div -->
+                        <div class="mobile-ratingCount">
+                          <span>(2,67,845)</span>
+                          <img src="img/products/flipkart-assured.png" />
+                        </div>
+                        <!-- end mobile view div -->
                       </div>
-                      <span>2,67,845 Ratings & 22,523 Reviews</span>
+                      <ul>
+                        <li>6 GB RAM | 128 GB ROM | Expandable Upto 256 GB</li>
+                        <li>16.0 cm(6.3 inch) Full HD+ display</li>
+                        <li>48MB + 5MB | 13MB Front Camera</li>
+                        <li>4000 mAh Li-polymer Battery</li>
+                        <li>Qualcomm Snapdragon 675 Processor</li>
+                        <li>Splash Proof - Protected by P2i</li>
+                        <li>Quick Charge 4.0 Support</li>
+                        <li>
+                          Brand Warranty of 1 Year Available for Mobile and 6
+                          months for Accessories
+                        </li>
+                      </ul>
                     </div>
-                    <ul>
-                      <li>6 GB RAM | 128 GB ROM | Expandable Upto 256 GB</li>
-                      <li>16.0 cm(6.3 inch) Full HD+ display</li>
-                      <li>48MB + 5MB | 13MB Front Camera</li>
-                      <li>4000 mAh Li-polymer Battery</li>
-                      <li>Qualcomm Snapdragon 675 Processor</li>
-                      <li>Splash Proof - Protected by P2i</li>
-                      <li>Quick Charge 4.0 Support</li>
-                      <li>
-                        Brand Warranty of 1 Year Available for Mobile and 6
-                        months for Accessories
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="price-div">
-                    <div>
-                      <h2>₹13,999</h2>
-                      <img src="img/products/flipkart-assured.png" />
-                    </div>
-                    <div class="discount-div">
-                      <div>₹16,999</div>
-                      <span>23% off</span>
-                    </div>
-                    <div>No Cost EMI</div>
-                    <div>
-                      <span>Upto <b> ₹12,750 </b> Off an Exchange</span>
+                    <div class="price-div">
+                      <div class="multi-container">
+                        <div>
+                          <h2>₹13,999</h2>
+                          <img src="img/products/flipkart-assured.png" />
+                        </div>
+                        <div class="discount-div">
+                          <div>₹16,999</div>
+                          <span>23% off</span>
+                        </div>
+                      </div>
+                      <div class="emi-container">No Cost EMI</div>
+                      <div class="upto-div">
+                        <span>Upto <b> ₹12,750 </b> Off an Exchange</span>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <!-- mobile feature section -->
+                <div>
+                  <ul class="mobile-feature">
+                    <li><span> 6 GB RAM | 128 GB Storage</span></li>
+                    <li>
+                      <span>15.44 cm (6.08 inch) HD+ Display</span
+                      ><span>4030 mAh</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- eng mobile section -->
               </a>
             </div>
 
             <!-- product 2 -->
             <div>
               <a href="">
-                <div class="product-show-div">
-                  <img src="img/products/1.jpeg" />
-                  <span>
-                    <input type="checkbox" value="compare" />
-                    <span>Add to Compare</span>
-                  </span>
-                </div>
-                <img src="img/products/heart.png" class="heart" />
-                <div class="details-div">
-                  <div class="description-div">
-                    <h2>Redmi Note 7 Pro(Space Black,64GB)</h2>
-                    <div class="rating-reviews-div">
-                      <div class="rating-div">
-                        <span class="btn-rating">4.5</span>
-                        <img src="img/products/star.png" />
-                        <div class="review-list">
-                          <div class="view-rating">
-                          <span>4.5<img src="img/products/star-black.png"></span>
-                          <div>2,71,904 Ratings & 22,818 Reviews</div>
-                       </div>
-                       <div>
+                <div class="desktop">
+                  <div class="product-show-div">
+                    <img src="img/products/1.jpeg" />
+                    <span>
+                      <input type="checkbox" value="product2" />
+                      <span>Add to Compare</span>
+                    </span>
+                  </div>
+                  <img src="img/products/heart.png" class="heart" />
+                  <div class="details-div">
+                    <div class="description-div">
+                      <h2>Redmi Note 7 Pro(Space Black,64GB)</h2>
+                      <div class="rating-reviews-div">
+                        <div class="rating-div">
+                          <span class="btn-rating">4.5</span>
+                          <img src="img/products/star.png" />
+                          <div class="review-list">
+                            <div class="view-rating">
+                              <span
+                                >4.5<img src="img/products/star-black.png"
+                              /></span>
+                              <div>2,71,904 Ratings & 22,818 Reviews</div>
+                            </div>
+                            <div>
+                              <div class="progress-container">
+                                <span
+                                  >5
+                                  <img src="img/products/star-black.png" />
+                                </span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:100px"
+                                  ></div>
+                                </div>
+                                <span>1,83,083</span>
+                              </div>
 
-                        <div class="progress-container">
-                          <span>5
-                            <img src="img/products/star-black.png">
-                          </span>
-                          <div class="progress-bar">
-                            <div class="progress" style="width:100px">
+                              <div class="progress-container">
+                                <span
+                                  >4
+                                  <img src="img/products/star-black.png" />
+                                </span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:35px"
+                                  ></div>
+                                </div>
+                                <span>58,173</span>
+                              </div>
+
+                              <div class="progress-container">
+                                <span
+                                  >3
+                                  <img src="img/products/star-black.png" />
+                                </span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:12px"
+                                  ></div>
+                                </div>
+                                <span>14,248</span>
+                              </div>
+
+                              <div class="progress-container">
+                                <span
+                                  >2
+                                  <img src="img/products/star-black.png" />
+                                </span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:4px;background: orange"
+                                  ></div>
+                                </div>
+                                <span>4,598</span>
+                              </div>
+
+                              <div class="progress-container">
+                                <span
+                                  >1
+                                  <img src="img/products/star-black.png" />
+                                </span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:8px;background: orangered"
+                                  ></div>
+                                </div>
+                                <span>11,808</span>
+                              </div>
                             </div>
                           </div>
-                          <span>1,83,083</span>
                         </div>
+                        <span>
+                          <span class="rating">2,68,170 </span> Ratings &22,548
+                          Reviews
+                        </span>
 
-                        <div class="progress-container">
-                          <span>4
-                            <img src="img/products/star-black.png">
-                          </span>
-                          <div class="progress-bar">
-                            <div class="progress" style="width:35px">
-                            </div>
-                          </div>
-                          <span>58,173</span>
+                        <!-- mobile view div -->
+                        <div class="mobile-ratingCount">
+                          <span>2,68,170</span>
+                          <img src="img/products/flipkart-assured.png" />
                         </div>
-
-                        <div class="progress-container">
-                          <span>3
-                            <img src="img/products/star-black.png">
-                          </span>
-                          <div class="progress-bar">
-                            <div class="progress" style="width:12px">
-                            </div>
-                          </div>
-                          <span>14,248</span>
+                        <!-- end mobile view div -->
+                      </div>
+                      <ul>
+                        <li>6 GB RAM | 64 GB ROM | Expandable Upto 256 GB</li>
+                        <li>16.0 cm (6.3 inch) Full HD+ Display</li>
+                        <li>48MB + 5MB | 13MB Front Camera</li>
+                        <li>4000 mAh Li-polymer Battery</li>
+                        <li>Qualcomm Snapdragon 675 Processor</li>
+                        <li>Splash Proof - Protected by P2i</li>
+                        <li>Quick Charge 4.0 Support</li>
+                        <li>
+                          Brand Warranty of 1 Year Available for Mobile and 6
+                          Months for Accessories
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="price-div">
+                      <div class="multi-container">
+                        <div>
+                          <h2>₹13,999</h2>
+                          <img src="img/products/flipkart-assured.png" />
                         </div>
-
-                        <div class="progress-container">
-                          <span>2
-                            <img src="img/products/star-black.png">
-                          </span>
-                          <div class="progress-bar">
-                            <div class="progress" style="width:4px;background: orange"></div>
-                          </div>
-                          <span>4,598</span>
-                        </div>
-
-                        <div class="progress-container">
-                          <span>1
-                            <img src="img/products/star-black.png">
-                          </span>
-                          <div class="progress-bar">
-                            <div class="progress" style="width:8px;background: orangered">
-                            </div>
-                          </div>
-                          <span>11,808</span>
-                        </div>
-                        
-                       </div>
+                        <div class="discount-div">
+                          <div>₹17,999</div>
+                          <span>22% off</span>
                         </div>
                       </div>
-                      <span>2,68,170 Ratings &22,548 Reviews</span>
-                    </div>
-                    <ul>
-                      <li>6 GB RAM | 64 GB ROM | Expandable Upto 256 GB</li>
-                      <li>16.0 cm (6.3 inch) Full HD+ Display</li>
-                      <li>48MB + 5MB | 13MB Front Camera</li>
-                      <li>4000 mAh Li-polymer Battery</li>
-                      <li>Qualcomm Snapdragon 675 Processor</li>
-                      <li>Splash Proof - Protected by P2i</li>
-                      <li>Quick Charge 4.0 Support</li>
-                      <li>
-                        Brand Warranty of 1 Year Available for Mobile and 6
-                        Months for Accessories
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="price-div">
-                    <div>
-                      <h2>₹13,999</h2>
-                      <img src="img/products/flipkart-assured.png" />
-                    </div>
-                    <div class="discount-div">
-                      <div>₹17,999</div>
-                      <span>22% off</span>
-                    </div>
-                    <div>No Cost EMI</div>
-                    <div>
-                      <span>Upto <b> ₹13,250 </b> Off an Exchange</span>
+                      <div class="emi-container">No Cost EMI</div>
+                      <div>
+                        <span>Upto <b> ₹13,250 </b> Off an Exchange</span>
+                      </div>
                     </div>
                   </div>
+                </div>
+                <div>
+                  <ul class="mobile-feature">
+                    <li><span>6 GB RAM | 64 GB ROM</span></li>
+                    <li>
+                      <span>16 cm (6.0 inch) Full HD+ Display</span
+                      ><span>4000 mAh</span>
+                    </li>
+                  </ul>
                 </div>
               </a>
             </div>
@@ -684,200 +813,291 @@
             <!-- product 3 -->
             <div>
               <a href="">
-                <div class="product-show-div">
-                  <img src="img/products/2.jpeg" />
-                  <span>
-                    <input type="checkbox" value="compare" />
-                    <span>Add to Compare</span>
-                  </span>
-                </div>
-                <img src="img/products/heart.png" class="heart" />
-                <div class="details-div">
-                  <div class="description-div">
-                    <h2>Redmi Note 6 Pro(Red,64 GB)</h2>
-                    <div class="rating-reviews-div">
-                      <div class="rating-div">
-                        <span class="btn-rating">4.5</span>
-                        <img src="img/products/star.png" />
-                        <div class="review-list">
-                          <div class="view-rating">
-                            <span>4.5<img src="img/products/star-black.png"></span>
-                            <div>2,71,904 Ratings & 22,818 Reviews</div>
-                          </div>
-                          <div>
-
-                            <div class="progress-container">
-                              <span>5<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width: 100px"></div>
-                              </div>
-                              <span>1,83,083</span>
+                <div class="desktop">
+                  <div class="product-show-div">
+                    <img src="img/products/2.jpeg" />
+                    <span>
+                      <input type="checkbox" value="product3" />
+                      <span>Add to Compare</span>
+                    </span>
+                  </div>
+                  <img src="img/products/heart.png" class="heart" />
+                  <div class="details-div">
+                    <div class="description-div">
+                      <h2>Redmi Note 6 Pro(Red,64 GB)</h2>
+                      <div class="rating-reviews-div">
+                        <div class="rating-div">
+                          <span class="btn-rating">4.5</span>
+                          <img src="img/products/star.png" />
+                          <div class="review-list">
+                            <div class="view-rating">
+                              <span
+                                >4.5<img src="img/products/star-black.png"
+                              /></span>
+                              <div>2,71,904 Ratings & 22,818 Reviews</div>
                             </div>
-
-                            <div class="progress-container">
-                              <span>4<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:37"></div>
+                            <div>
+                              <div class="progress-container">
+                                <span
+                                  >5<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width: 100px"
+                                  ></div>
+                                </div>
+                                <span>1,83,083</span>
                               </div>
-                              <span>58,173</span>
-                            </div>
 
-                            <div class="progress-container">
-                              <span>3<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:13px"></div>
+                              <div class="progress-container">
+                                <span
+                                  >4<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div class="progress" style="width:37"></div>
+                                </div>
+                                <span>58,173</span>
                               </div>
-                              <span>14,248</span>
-                            </div>
 
-                            <div class="progress-container">
-                              <span>2<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:3px;background: orange"></div>
+                              <div class="progress-container">
+                                <span
+                                  >3<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:13px"
+                                  ></div>
+                                </div>
+                                <span>14,248</span>
                               </div>
-                              <span>4,592</span>
-                            </div>
 
-                            <div class="progress-container">
-                              <span>1<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:12px;background: orangered"></div>
+                              <div class="progress-container">
+                                <span
+                                  >2<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:3px;background: orange"
+                                  ></div>
+                                </div>
+                                <span>4,592</span>
                               </div>
-                              <span>11,808</span>
-                            </div>
 
+                              <div class="progress-container">
+                                <span
+                                  >1<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:12px;background: orangered"
+                                  ></div>
+                                </div>
+                                <span>11,808</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
+                        <span>1,18,925 Ratings & 15,518 Reviews</span>
+                        <!-- mobile view div -->
+                        <div class="mobile-ratingCount">
+                          <span>1,18,925</span>
+                          <img src="img/products/flipkart-assured.png" />
+                        </div>
+                        <!-- end mobile view div -->
                       </div>
-                      <span>1,18,925 Ratings & 15,518 Reviews</span>
+                      <ul>
+                        <li>6 GB RAM | 64 GB ROM |Expandable Upto 256 GB</li>
+                        <li>15.9 cm(6.26 inch)Full HD+ Display</li>
+                        <li>12MB+5MB | 20MB+2MB duel Front Camera</li>
+                        <li>4000 mAh li-polymer Battery</li>
+                        <li>Qualcomm Snapdragon 636 Processor</li>
+                        <li>
+                          Brand Warranty of 1 Year Available for Mobile and 6
+                          Months for Accessories
+                        </li>
+                      </ul>
                     </div>
-                    <ul>
-                      <li>6 GB RAM | 64 GB ROM |Expandable Upto 256 GB</li>
-                      <li>15.9 cm(6.26 inch)Full HD+ Display</li>
-                      <li>12MB+5MB | 20MB+2MB duel Front Camera</li>
-                      <li>4000 mAh li-polymer Battery</li>
-                      <li>Qualcomm Snapdragon 636 Processor</li>
-                      <li>
-                        Brand Warranty of 1 Year Available for Mobile and 6
-                        Months for Accessories
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="price-div">
-                    <div>
-                      <h2>₹11,999</h2>
-                      <img src="img/products/flipkart-assured.png" />
-                    </div>
-                    <div class="discount-div">
-                      <div>₹17,999</div>
-                      <span>33% off</span>
-                    </div>
-                    <div>No Cost EMI</div>
-                    <div>
-                      <span>Upto <b>₹11,250</b> Off on Exchange</span>
+                    <div class="price-div">
+                      <div class="multi-container">
+                        <div>
+                          <h2>₹11,999</h2>
+                          <img src="img/products/flipkart-assured.png" />
+                        </div>
+                        <div class="discount-div">
+                          <div>₹17,999</div>
+                          <span>33% off</span>
+                        </div>
+                      </div>
+                      <div class="emi-container">No Cost EMI</div>
+                      <div>
+                        <span>Upto <b>₹11,250</b> Off on Exchange</span>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <!-- Mobile feature section -->
+                <div>
+                  <ul class="mobile-feature">
+                    <li><span>6 GB | 64 GB</span></li>
+                    <li>
+                      <span>15.9 CM (6.26 inch) Full HD+ Display</span
+                      ><span>4000 mAh</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End mobile section -->
               </a>
             </div>
 
             <!-- product 4 -->
             <div>
               <a href="">
-                <div class="product-show-div">
-                  <img src="img/products/3.jpeg" />
-                  <span>
-                    <input type="checkbox" value="compare" />
-                    <span>Add to Compare</span>
-                  </span>
-                </div>
-                <img src="img/products/heart.png" class="heart" />
-                <div class="details-div">
-                  <div class="description-div">
-                    <h2>Redmi Note 7 Pro (Space Black,128 GB)</h2>
-                    <div class="rating-reviews-div">
-                      <div class="rating-div">
-                        <span class="btn-rating">4.5</span>
-                        <img src="img/products/star.png" />
-                        <div class="review-list">
-                          <div class="view-rating">
-                            <span>4.5<img src="img/products/star-black.png"></span>
-                            <div>9,735 Rating & 731 Reviews</div>
-                          </div>
-                          <div >
-
-                            <div class="progress-container">
-                              <span>5<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:100px"></div>
-                              </div>
-                              <span>6,040</span>
+                <div class="desktop">
+                  <div class="product-show-div">
+                    <img src="img/products/3.jpeg" />
+                    <span>
+                      <input type="checkbox" value="product4" />
+                      <span>Add to Compare</span>
+                    </span>
+                  </div>
+                  <img src="img/products/heart.png" class="heart" />
+                  <div class="details-div">
+                    <div class="description-div">
+                      <h2>Redmi Note 7 Pro (Space Black,128 GB)</h2>
+                      <div class="rating-reviews-div">
+                        <div class="rating-div">
+                          <span class="btn-rating">4.5</span>
+                          <img src="img/products/star.png" />
+                          <div class="review-list">
+                            <div class="view-rating">
+                              <span
+                                >4.5<img src="img/products/star-black.png"
+                              /></span>
+                              <div>9,735 Rating & 731 Reviews</div>
                             </div>
-
-                            <div class="progress-container">
-                              <span>4<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:35px"></div>
+                            <div>
+                              <div class="progress-container">
+                                <span
+                                  >5<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:100px"
+                                  ></div>
+                                </div>
+                                <span>6,040</span>
                               </div>
-                              <span>1,836</span>
-                            </div>
 
-                            <div class="progress-container">
-                              <span>3<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:15px"></div>
+                              <div class="progress-container">
+                                <span
+                                  >4<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:35px"
+                                  ></div>
+                                </div>
+                                <span>1,836</span>
                               </div>
-                              <span>566</span>
-                            </div>
 
-                            <div class="progress-container">
-                              <span>2<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:4px;background: orange"></div>
+                              <div class="progress-container">
+                                <span
+                                  >3<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:15px"
+                                  ></div>
+                                </div>
+                                <span>566</span>
                               </div>
-                              <span>209</span>
-                            </div>
 
-                            <div class="progress-container">
-                              <span>1<img src="img/products/star-black.png"></span>
-                              <div class="progress-bar">
-                                <div class="progress" style="width:7px;background: orangered"></div>
+                              <div class="progress-container">
+                                <span
+                                  >2<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:4px;background: orange"
+                                  ></div>
+                                </div>
+                                <span>209</span>
                               </div>
-                              <span>521</span>
+
+                              <div class="progress-container">
+                                <span
+                                  >1<img src="img/products/star-black.png"
+                                /></span>
+                                <div class="progress-bar">
+                                  <div
+                                    class="progress"
+                                    style="width:7px;background: orangered"
+                                  ></div>
+                                </div>
+                                <span>521</span>
+                              </div>
                             </div>
-                            
                           </div>
                         </div>
+                        <span>2,68,170 Ratings & 22,542 Reviews</span>
+                        <!-- mobile view div -->
+                        <div class="mobile-ratingCount">
+                          <span>(2,68,170)</span>
+                          <img src="img/products/flipkart-assured.png" />
+                        </div>
+                        <!-- mobile view end -->
                       </div>
-                      <span>2,68.170 Ratings & 22,542 Reviews</span>
+                      <ul>
+                        <li>6 GB RAM | 128 GB ROM | Expandable Upto 256 GB</li>
+                        <li>16.0cm (6.3 inch) Full HD+ Display</li>
+                        <li>48MB + 5MB | 13MB Front Camera</li>
+                        <li>4000 mAh Battery</li>
+                        <li>Qualcomm Snapdragon 675 Processor</li>
+                        <li>Splash Proof - Protected by P2i</li>
+                        <li>Quick Charge 4.0 Support</li>
+                        <li>
+                          Brand Warranty of 1 Year Available for Mobile and 6
+                          Months for Accessories
+                        </li>
+                      </ul>
                     </div>
-                    <ul>
-                      <li>6 GB RAM | 128 GB ROM | Expandable Upto 256 GB</li>
-                      <li>16.0cm (6.3 inch) Full HD+ Display</li>
-                      <li>48MB + 5MB | 13MB Front Camera</li>
-                      <li>4000 mAh Battery</li>
-                      <li>Qualcomm Snapdragon 675 Processor</li>
-                      <li>Splash Proof - Protected by P2i</li>
-                      <li>Quick Charge 4.0 Support</li>
-                      <li>
-                        Brand Warranty of 1 Year Available for Mobile and 6
-                        Months for Accessories
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="price-div">
-                    <div>
-                      <h2>₹13,999</h2>
-                      <img src="img/products/flipkart-assured.png" />
+                    <div class="price-div">
+                      <div class="multi-container">
+                        <div>
+                          <h2>₹13,999</h2>
+                          <img src="img/products/flipkart-assured.png" />
+                        </div>
+                        <div class="discount-div">
+                          <div>₹17,999</div>
+                          <span>22% off</span>
+                        </div>
+                      </div>
+                      <div class="emi-container">No Cost EMI</div>
+                      <div>
+                        <span>Upto <b> ₹13,250 </b> off on Exchange</span>
+                      </div>
                     </div>
-                    <div class="discount-div">
-                      <div>₹17,999</div>
-                      <span>22% off</span>
-                    </div>
-                    <div>No Cost EMI</div>
-                    <span>Upto <b> ₹13,250 </b> off on Exchange</span>
                   </div>
                 </div>
+                <!-- Mobile feature Section -->
+                <div>
+                  <ul class="mobile-feature">
+                    <li><span>6 GB RAM| 128 GB ROM</span></li>
+                    <li>
+                      <span> 16.0 cm(6.3 inch) Full HD+ Display</span
+                      ><span></span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End mobile feature section-->
               </a>
             </div>
           </div>
