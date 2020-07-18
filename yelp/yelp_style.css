@@ -256,6 +256,9 @@ body {
   border-radius: 0 0 4px 4px;
   margin: 0;
 }
+.business-container h3:hover {
+  color: #0073bb;
+}
 
 /* content container with white background */
 .container {
@@ -269,7 +272,7 @@ body {
   padding-top: 32px;
 }
 
-.sanfrancisco-heading {
+.red-heading {
   color: #d32323;
   font-size: 21px;
   font-weight: 700;
@@ -300,6 +303,15 @@ body {
   white-space: nowrap;
   text-align: center;
   font-size: 13px;
+}
+
+.location-collection li {
+  padding: 0 10px;
+  border-bottom: 3px solid #fff;
+}
+
+.location-collection li:hover {
+  border-bottom: 3px solid #d32323;
 }
 
 .business-collection {
@@ -356,6 +368,12 @@ body {
   text-overflow: ellipsis;
   font-size: 16px !important;
   text-align: left !important;
+  text-decoration: none;
+  border-bottom: 3px solid #fff;
+}
+
+.details-head:hover {
+  border-bottom: 3px solid #0073bb;
 }
 
 .hot-rating {
@@ -481,6 +499,13 @@ body {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+}
+
+.event-bottom-h:hover {
+  border-bottom: 2px solid #0073bb;
+  cursor: pointer;
 }
 
 .event-details-container {
@@ -579,6 +604,12 @@ body {
   text-decoration: none;
   color: #0073bb;
   padding: 5px;
+  text-decoration: none;
+}
+
+.user-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .user-stats {
@@ -675,7 +706,7 @@ body {
   height: 18px;
   background-position: 0 -366px !important;
   background: url("img/business/rating.png");
-  vertical-align: middle;
+  /* vertical-align: middle; */
   display: block;
   border: 0;
   padding: 0;
@@ -710,6 +741,12 @@ body {
   color: #0073bb;
   text-decoration: none;
   vertical-align: baseline;
+  cursor: pointer;
+}
+
+.continue-reading:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .featured-item {
@@ -726,6 +763,12 @@ body {
   white-space: nowrap;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+}
+
+.featured-item h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .featured-item img {
@@ -766,6 +809,12 @@ body {
   padding-top: 15px;
   padding-left: 3px;
   white-space: nowrap;
+  text-decoration: none;
+}
+
+.by-user:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .places-by {
@@ -794,7 +843,7 @@ body {
 }
 
 .recent-activity-collection {
-  margin:0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -813,6 +862,7 @@ body {
 .activity-item {
   margin: 10px 20px;
   background-color: #fff;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -841,11 +891,18 @@ body {
   color: #0073bb;
   font-size: 14px;
   text-align: left;
+  text-decoration: none;
+  cursor: pointer;
   margin: 0;
   padding: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.name-heading:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .usual-text {
@@ -889,4 +946,84 @@ body {
 .collection-img-item img {
   width: 90px;
   height: 120px;
+}
+
+.continue-container {
+  padding: 20px;
+  width: 100%;
+}
+
+.small-text {
+  font-size: 13px;
+}
+
+.browse-businesses {
+  background-color: #f5f5f5 !important;
+  width: 100%;
+}
+
+.padding-none {
+  padding: 20px 0;
+}
+
+.browse-business-collection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding: 20px 0;
+}
+
+.browse-item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.browse-item a {
+  text-decoration: none;
+}
+
+.browse-item:hover {
+  border: 1px solid #0073bb;
+  box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.category-name {
+  color: #333;
+  word-break: break-word;
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 1.28571em;
+  text-decoration: none;
+}
+
+.browse-item:hover .category-name {
+  color: #0073bb;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+.half {
+  width: 50%;
+  margin: 10px;
+}
+
+.footer-div {
+  background-color: #f5f5f5 !important;
+  border-top: 1px solid #ccc;
+}
+
+.footer-img {
+  background-size: 660px 140px;
+  height: 140px;
+  margin: 42px auto 18px;
+  background: url("img/footer/footer.png") no-repeat bottom;
 }
