@@ -1072,3 +1072,42 @@ margin-bottom: 6px;
 .table-column a:hover{
 text-decoration: underline;
 }
+
+/* media query setup */
+
+@media screen and(min-width:400px) {
+  .mobile-view{
+    display: none;
+  }
+
+  .desktop-view{
+    display: flex;
+  }
+}
+
+@media screen and (max-width : 400px){
+.mobile-view{
+  display: block;
+}
+
+.desktop-view{
+  display: none;
+}
+}
+
+
+/* mobile view styling */
+.mobile-container{
+  width: 100%;
+  background: #fff;
+}
+
+.mobile-nav{
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: #d32323;
+  height:48.58px;
+
+}
