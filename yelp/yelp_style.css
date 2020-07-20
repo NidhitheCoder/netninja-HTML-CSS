@@ -1177,8 +1177,120 @@ body {
   padding:20px 0px;
 }
 
+.heading-span{
+  margin:3%;
+  padding-bottom: 12px;
+  font-weight:700;
+  word-wrap: break-word;
+}
+
 .mob-service-list{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.mob-service-list > div{
+  margin:3%;
+}
+
+.mob-service-list img{
+  width:100%;
+  height:104px;
+  border-radius: 4px;
+}
+
+.mob-service-list span{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* Open in the yelp app */
+.open-yelp-app{
+  background-color: #0097ec;
+  margin:5% 3% 10% 3%;
+  border-radius: 3px;
+  padding:20px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Hot new businesses nearby */
+.mob-hot-heading{
+  font-size: 21px;
+  font-weight: 700;
+  padding-left: 3%;
+  color:#333;
+  line-height: 1.28571em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mob-business-item{
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px 10px;
+}
+
+.mob-business-item a{
+  color: #0073bb;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 700;
+}
+
+.mob-business-details{
+  padding:10px;
+}
+
+.mob-rating-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.mob-business-details span{
+font-size: 12px;
+color:#666;
+}
+
+.mob-rating-star{
+  background:url('img/business/rating.png');
+  background-repeat: no-repeat;
+  height:14px;
+  width:90px;
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  background-position-y: -518px;
+}
+
+.item-category{
+}
+
+.item-category a{
+  color: #0073bb;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* View More business */
+.view-more{
+margin: 12px;
+padding:10px;
+background-color: #fff;
+border: 1px solid #ccc;
+color: #666;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Mobile footer */
+.mobile-footer{
+padding:10px;
+
 }
