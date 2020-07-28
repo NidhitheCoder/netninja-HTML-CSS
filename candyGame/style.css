@@ -1,11 +1,23 @@
-.grid{
-    width: 560px;
-    height: 560px;
-    display: flex;
-    flex-wrap: wrap;
+*{
+    box-sizing: border-box;
 }
 
-.grid div{
-    height: 70px;
-    width: 70px;
+body{
+margin: 0;
+padding:0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.grid {
+  width: 560px;
+  height: 560px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  height: 70px;
+  width: 70px;
 }

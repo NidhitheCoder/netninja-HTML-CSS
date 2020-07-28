@@ -1,11 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector(".grid");
-  const scoreDisplay = document.getElementById('score');
+  const scoreDisplay = document.getElementById("score");
   const width = 8;
   const squares = [];
   let score = 0;
 
-  const candyColors = ['url(img/blue-candy.jpeg)', 'url(img/orange-candy.jpeg)', 'url(img/choco-candy.jpg)', 'url(img/red-candy.jpeg)', 'url(img/yellow-candy.jpeg)', 'url(img/green-candy.jpeg)'];
+  const candyColors = [
+    "url(img/blue-candy.jpeg)",
+    "url(img/orange-candy.jpeg)",
+    "url(img/choco-candy.jpg)",
+    "url(img/red-candy.jpeg)",
+    "url(img/yellow-candy.jpeg)",
+    "url(img/green-candy.jpeg)"
+  ];
   // Create Boards inside the grid div
   function createBoard() {
     for (let i = 0; i < width * width; i++) {
@@ -15,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
       square.setAttribute("id", i);
       let randomColor = Math.floor(Math.random() * candyColors.length);
       square.style.backgroundImage = candyColors[randomColor];
-      square.style.backgroundSize ='cover';
-      square.style.backgroundRepeat = 'no-repeat';
+      square.style.backgroundSize = "cover";
+      square.style.backgroundRepeat = "no-repeat";
       grid.appendChild(square);
       squares.push(square);
     }
@@ -201,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
         )
       ) {
         score += 3;
-        scoreDisplay,innerHTML = score;
+        scoreDisplay, (innerHTML = score);
         ColumnOfThree.forEach(index => {
           squares[index].style.backgroundImage = "";
         });
@@ -217,17 +224,18 @@ document.addEventListener("DOMContentLoaded", () => {
         squares[i + width].style.backgroundImage =
           squares[i].style.backgroundImage;
         squares[i].style.backgroundImage = "";
-        let firstRow = [0,1,2,3,4,5,6,7];
+        let firstRow = [0, 1, 2, 3, 4, 5, 6, 7];
         const isFirstRow = firstRow.includes(i);
-        if(isFirstRow && squares[i].style.backgroundImage === "") {
-            let randomColor = Math.floor(Math.random() * candyColors.length);
-            squares[i].style.backgroundImage = candyColors[randomColor];
+        if (isFirstRow && squares[i].style.backgroundImage === "") {
+          let randomColor = Math.floor(Math.random() * candyColors.length);
+          squares[i].style.backgroundImage = candyColors[randomColor];
         }
       }
     }
   }
 
   setInterval(() => {
+      scoreDisplay.innerHTML = score;
     moveDown();
     // checkColumnForFour();
     // checkRowForFour();
