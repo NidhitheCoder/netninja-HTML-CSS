@@ -5,9 +5,23 @@
 body{
 margin: 0;
 padding:0;
+height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
+background-image: url('img/bg-candy.jpeg');
+background-size: cover;
+background-repeat: no-repeat;
+font-family: sans-serif;
+}
+
+.container{
+  margin-top: 15px;
+  border-radius: 5px;
+  width: 580px;
+  height: 580px;
+  background-color: #fff;
+  border: 10px solid #c401fb;;
 }
 
 .grid {
@@ -20,4 +34,19 @@ align-items: center;
 .grid div {
   height: 70px;
   width: 70px;
+}
+
+.score-board {
+padding:0 40px;
+display: flex;
+flex-direction: column;
+position: absolute;
+left:10%;
+justify-content: center;
+align-items: center; 
+background-color: purple; 
+border-radius: 5px;
+box-shadow: 0px 0px 30px 30px #fff;
+font-weight: 700;
+color: #fff;
 }

@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let score = 0;
 
   const candyColors = [
-    "url(img/blue-candy.jpeg)",
-    "url(img/orange-candy.jpeg)",
-    "url(img/choco-candy.jpg)",
-    "url(img/red-candy.jpeg)",
-    "url(img/yellow-candy.jpeg)",
-    "url(img/green-candy.jpeg)"
+    "url(img/blue-can.jpeg)",
+    "url(img/orange-can.png)",
+    "url(img/brown-candy.jpg)",
+    "url(img/red-can.jpg)",
+    "url(img/yellow-can.png)",
+    "url(img/green-can.jpg)"
   ];
   // Create Boards inside the grid div
   function createBoard() {
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //   check dfor column of three
   function checkColumnForThree() {
-    for (let i = 0; i <= 47; i++) {
+    for (let i = 0; i <= 46; i++) {
       let ColumnOfThree = [i, i + width, i + width * 2];
       let decidedColor = squares[i].style.backgroundImage;
       const isblank = squares[i].style.backgroundImage === "";
@@ -237,8 +237,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(() => {
       scoreDisplay.innerHTML = score;
     moveDown();
-    // checkColumnForFour();
-    // checkRowForFour();
+    checkColumnForFour();
+    checkRowForFour();
     checkRowForThree();
     checkColumnForThree();
   }, 100);
