@@ -1,0 +1,28 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #000;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container span {
+  color: #fff;
+  text-transform: uppercase;
+  /* display: block; */
+}
+
+.text1{
+    font-weight: 700;
+    font-size: 60px;
+}
