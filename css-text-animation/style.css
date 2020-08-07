@@ -13,16 +13,44 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .container span {
-  color: #fff;
   text-transform: uppercase;
-  /* display: block; */
+  display: block;
 }
 
-.text1{
-    font-weight: 700;
-    font-size: 60px;
+.text1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  word-wrap: none;
+  background: #000;
+  position: relative;
+  animation: text 3s 1;
+}
+
+.text2 {
+  font-size: 30px;
+  color: #6ab04c;
+}
+
+@keyframes text {
+  0% {
+    color: #000;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
 }
