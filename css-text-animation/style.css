@@ -21,6 +21,7 @@ body {
   display: block;
 }
 
+/* first animation */
 .text1 {
   color: #fff;
   font-weight: 700;
@@ -52,5 +53,35 @@ body {
   85% {
     letter-spacing: 8px;
     margin-bottom: -40px;
+  }
+}
+
+/* second animation */
+.wavy {
+  margin-top: 30px;
+  position: relative;
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+.wavy span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
   }
 }
