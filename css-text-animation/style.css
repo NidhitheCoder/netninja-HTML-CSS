@@ -56,7 +56,7 @@ body {
   }
 }
 
-/* second animation */
+/* /* second animation the third animations keyframe may affect this animations  */
 .wavy {
   margin-top: 30px;
   position: relative;
@@ -83,5 +83,39 @@ body {
   40%,
   100% {
     transform: translateY(0px);
+  }
+}
+
+/* Third animation wavy */
+.content {
+  height: 100px;
+  margin-top: 130px;
+  position: relative;
+}
+
+.content h2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 8em;
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+/* to this code also a good design */
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(25% 42%, 57% 59%, 100% 48%, 100% 100%, 0 100%, 0 46%);
+  }
+  50% {
+    clip-path: polygon(33% 65%, 67% 51%, 100% 63%, 100% 100%, 0 100%, 0 70%);
   }
 }
