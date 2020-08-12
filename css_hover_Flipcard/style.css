@@ -33,4 +33,23 @@ body{
     justify-content: center;
     align-items: center;
     transition: 2s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.card .face.front{
+    background: #ff0;
+}
+
+.card:hover .face.front{
+    transform: perspective(500) rotateY(180deg);
+}
+
+.card .face.back{
+    background: #3bc2ff;
+    color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .face.back{
+    transform: perspective(500px) rotate(360deg);
 }
