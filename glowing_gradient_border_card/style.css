@@ -24,6 +24,29 @@ body{
     margin:40px;
 }
 
+.box::before{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    right: -2px;
+    bottom:-2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    bottom: -2px;
+    right: -2px;
+    background:#fff;
+    z-index: -2;
+    filter: blur(40px)
+}
+
 .box .glass{
     position: absolute;
     top:0;
@@ -33,4 +56,9 @@ body{
     display: block;
     background: rgba(0,0,0,0.1);
     pointer-events: none;
+}
+
+.box .content{
+padding:20px;
+color:#fff;
 }
