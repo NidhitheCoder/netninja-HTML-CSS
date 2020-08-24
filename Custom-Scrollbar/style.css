@@ -1,4 +1,6 @@
 
+/* not working in firebfox: ::-webkit-scrollbar is only available in Blink- and WebKit-based browsers */
+
 *{
     margin: 0;
     padding:0;
@@ -10,6 +12,33 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: #000;
-    color:#fff;
 }
 
+section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+}
+section h2{
+    color:#666;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+section p{
+    color:#666;
+    font-size: 1.2em;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#30ff00);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#00c6ff,#0332fe);
+}
