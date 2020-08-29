@@ -8,11 +8,12 @@
     <title>Horizontal scroll with buttons</title>
   </head>
   <body>
-    <div>
-      <button class="btn">Left</button>
-      <button class="btn">Right</button>
+    <div class="btn-container">
+      <button id="leftBtn" class="btn">Left</button>
+      <button id="rightBtn" class="btn">Right</button>
     </div>
-    <div class="container">
+    <div id="itemContainer" class="container">
+        <div class="holder">
       <div class="item">One</div>
       <div class="item">Two</div>
       <div class="item">Thee</div>
@@ -25,6 +26,7 @@
       <div class="item">Two</div>
       <div class="item">Thee</div>
       <div class="item">Four</div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

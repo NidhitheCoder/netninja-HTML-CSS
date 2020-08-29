@@ -12,6 +12,13 @@ body {
   background: #565432;
   min-height: 100vh;
 }
+/* 
+.btn-container{
+    position: absolute;
+    top:20%;
+    left: 50%;
+    right:-50%;
+} */
 
 .btn {
   background-color: cyan;
@@ -19,20 +26,22 @@ body {
   border-radius: 5px;
   padding: 5px;
   text-align: center;
+  outline: 0;
+  color: #232fe2;
+}
+.container{
+    width: 95vw;
 }
 
-.container {
-  margin: 5vw;
+.holder {
   scroll-behavior: smooth;
   display: flex;
   flex-direction: row;
-  overflow: scroll;
-  width: 90vw;
 }
 
 .item {
   height: 200px;
-  width: 600px;
+  width: 90vh;
   background: #fff;
   margin: 0 1vw;
   border-radius: 8px;
