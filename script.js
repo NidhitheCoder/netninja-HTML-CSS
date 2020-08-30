@@ -75,10 +75,24 @@
 // const isFalse = !1;
 // const alsoFalse = !!0;
 
-// creating completely empty objects
-let obj = Object.create(null);
-console.log(typeof(obj));
-// truncate elements in an array
-let fruits = ["orange","apple","mango","cherry","pineapple","grapes"];
-fruits.length = 3;
-console.log(fruits);
+// // creating completely empty objects
+// let obj = Object.create(null);
+// console.log(typeof(obj));
+
+// // truncate elements in an array
+// let fruits = ["orange","apple","mango","cherry","pineapple","grapes"];
+// fruits.length = 3;
+// console.log(fruits);
+
+// merging off objects // if there where not in same keyname
+let obj1 = {"name":"ajay","age" : 22};
+let obj2 = {"client" :"july"};
+
+const mergeObject = (obj1,obj2) => {
+for (let key in obj2){
+  if(obj2.hasOwnProperty(key)) obj1[key] = obj2[key];
+}
+return obj1;
+}
+
+console.log(mergeObject(obj1,obj2));
