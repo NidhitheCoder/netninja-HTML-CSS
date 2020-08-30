@@ -12,13 +12,13 @@ body {
   background: #565432;
   min-height: 100vh;
 }
-/* 
+
 .btn-container{
-    position: absolute;
+    position: fixed;
     top:20%;
     left: 50%;
     right:-50%;
-} */
+}
 
 .btn {
   background-color: cyan;
@@ -30,10 +30,7 @@ body {
   color: #232fe2;
 }
 .container{
-    width: 95vw;
-}
-
-.holder {
+  background: orangered;
   scroll-behavior: smooth;
   display: flex;
   flex-direction: row;
