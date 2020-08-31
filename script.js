@@ -1,3 +1,4 @@
+
 // // Old way
 // let arr = [10, 9, 8, 7, 6];
 // let x = arr[0];
@@ -134,7 +135,18 @@
 // console.log((srt / 100) | 0);
 // console.log((12342 / 10) | 0);
 
-// get last item of array
+// // get last item of array
 let color = ["red","green","orange","blue","white"];
-// console.log(color.splice(-1)); // return last one item
-console.log(color.splice(-3)); // return last 3 items
+// // console.log(color.splice(-1)); // return last one item
+// console.log(color.splice(-3)); // return last 3 items
+
+// Format json code
+// console.log(JSON.stringify({"name":"july","age":32},null,'\t'));
+
+// for(let i = 0;i < color.length;i++) {
+//   console.log(color[i]);
+// }
+
+for(let i=0,len = color.length;i < len;i++) {
+console.log(color[i]);
+}
