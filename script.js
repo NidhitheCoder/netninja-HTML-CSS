@@ -1,3 +1,4 @@
+
 // // Old way
 // let arr = [10, 9, 8, 7, 6];
 // let x = arr[0];
@@ -52,7 +53,7 @@
 // x = (2,3);
 // console.log("x is now " ,x);
 
-// // filter unique values in an array *Important  
+// // filter unique values in an array *Important
 // const num = [1,1,2,3,8,3,2,2,1,3,4,47,7,3,2,2];
 // const uniqueArray = [...new Set(num)];
 // console.log(uniqueArray);
@@ -61,7 +62,7 @@
 
 // // simple conditional *Important
 // let count = "1" ;
-// // traditional way 
+// // traditional way
 // if(count) {
 //     console.log(count);
 // } else {
@@ -84,15 +85,68 @@
 // fruits.length = 3;
 // console.log(fruits);
 
-// merging off objects // if there where not in same keyname
-let obj1 = {"name":"ajay","age" : 22};
-let obj2 = {"client" :"july"};
+// // merging off objects // if there where not in same keyname
+// let obj1 = {"name":"ajay","age" : 22};
+// let obj2 = {"client" :"july"};
 
-const mergeObject = (obj1,obj2) => {
-for (let key in obj2){
-  if(obj2.hasOwnProperty(key)) obj1[key] = obj2[key];
-}
-return obj1;
-}
+// const mergeObject = (obj1,obj2) => {
+// for (let key in obj2){
+//   if(obj2.hasOwnProperty(key)) obj1[key] = obj2[key];
+// }
+// return obj1;
+// }
 
-console.log(mergeObject(obj1,obj2));
+// // console.log(mergeObject(obj1,obj2));
+
+// let one = 1, two = 2, three = 3;
+// console.log(one && two && three);
+
+// // easy convertion to string
+// let num = 2;
+// console.log(typeof num);
+
+// num += "";
+// console.log(num);
+// console.log(typeof num);
+
+// // easy convertion to number
+// let  strNum = "15";
+// console.log(typeof strNum);
+//  strNum = +strNum;
+//  console.log(strNum);
+//  console.log(typeof strNum);
+//  console.log(+true);
+//  console.log(+false);
+
+// //  quick power
+// console.log(2**3);
+// console.log(2 << 2); //equal to 2**3 . this operator means Math.pow(2,(n-1))
+
+// // quicker way to float to integer .if you are sure its a float value.
+// console.log(28.55 | 0);
+// console.log(33.44 | 0);
+
+// //remove last element  usual way
+// let srt = "1553";
+// console.log(srt.substring(0, srt.length - 1));
+// console.log(srt);
+
+// // quicker way
+// console.log((srt / 100) | 0);
+// console.log((12342 / 10) | 0);
+
+// // get last item of array
+let color = ["red","green","orange","blue","white"];
+// // console.log(color.splice(-1)); // return last one item
+// console.log(color.splice(-3)); // return last 3 items
+
+// Format json code
+// console.log(JSON.stringify({"name":"july","age":32},null,'\t'));
+
+// for(let i = 0;i < color.length;i++) {
+//   console.log(color[i]);
+// }
+
+for(let i=0,len = color.length;i < len;i++) {
+console.log(color[i]);
+}
