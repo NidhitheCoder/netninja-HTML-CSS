@@ -135,18 +135,43 @@
 // console.log((srt / 100) | 0);
 // console.log((12342 / 10) | 0);
 
-// // get last item of array
-let color = ["red","green","orange","blue","white"];
+// // // get last item of array
+// let color = ["red","green","orange","blue","white"];
 // // console.log(color.splice(-1)); // return last one item
 // console.log(color.splice(-3)); // return last 3 items
 
-// Format json code
+// // Format json code
 // console.log(JSON.stringify({"name":"july","age":32},null,'\t'));
 
 // for(let i = 0;i < color.length;i++) {
 //   console.log(color[i]);
 // }
 
-for(let i=0,len = color.length;i < len;i++) {
-console.log(color[i]);
-}
+// for(let i=0,len = color.length;i < len;i++) {
+// console.log(color[i]);
+// }
+
+// // Default values using  || operator 
+// function User(name,age) {
+//     this.name = name || "Oliver Queen";
+//     this.age = age || 17;
+// }
+
+// let user1 = new User();
+// console.log(user1.name);
+// console.log(user1.age);
+
+//  let user2 = new User("Smith",33);
+//  console.log(user2.name);
+//  console.log(user2.age);
+
+//  replace string all
+let string ="john john";
+console.log(string.replace(/hn/,"ana"));
+console.log(string.replace(/hn/g,"ana"));
+
+// mergin arrays
+const arr1 = [1,2,3,4];
+const arr2 = [5,6,2,4,9];
+// console.log(arr1.concat(arr2));
+console.log(arr1.push.apply(arr1,arr2));
