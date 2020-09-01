@@ -1,166 +1,177 @@
 
-// Old way
-let arr = [10, 9, 8, 7, 6];
-let x = arr[0];
-let y = arr[1];
-let z = arr[2];
-console.log("x is : ", x);
-console.log("y is : ", y);
-console.log("z is : ", z);
+// // Old way
+// let arr = [10, 9, 8, 7, 6];
+// let x = arr[0];
+// let y = arr[1];
+// let z = arr[2];
+// console.log("x is : ", x);
+// console.log("y is : ", y);
+// console.log("z is : ", z);
 
-//  New way
-let arr1 = [10, 9, 8, 7, 6];
-let [A, B, C, ...rest] = arr1;
-console.log("A is : ", A);
-console.log("B is : ", B);
-console.log("C is : ", C);
+// //  New way
+// let arr1 = [10, 9, 8, 7, 6];
+// let [A, B, C, ...rest] = arr1;
+// console.log("A is : ", A);
+// console.log("B is : ", B);
+// console.log("C is : ", C);
 
-//  Usual function in js
-function add(a, b) {
-  return a + b;
-}
-console.log(add(3, 4));
+// //  Usual function in js
+// function add(a, b) {
+//   return a + b;
+// }
+// console.log(add(3, 4));
 
-//  function treated as variable
-const addData = (p, q) => {
-  return a + b;
-};
-console.log(addData(3, 5));
+// //  function treated as variable
+// const addData = (p, q) => {
+//   return a + b;
+// };
+// console.log(addData(3, 5));
 
-//  sum all the values from an array
-let numbers = [3,5,7,9];
-let sum = numbers.reduce((x,y) =>  x+y);
-console.log(sum);
+// //  sum all the values from an array
+// let numbers = [3,5,7,9];
+// let sum = numbers.reduce((x,y) =>  x+y);
+// console.log(sum);
 
-//  short circuit contitional
-let hungry = "yes";
-if(hungry) {
-  console.log("need some food...");
-}
+// //  short circuit contitional
+// let hungry = "yes";
+// if(hungry) {
+//   console.log("need some food...");
+// }
 
-hungry && console.log("need some extra food");
+// hungry && console.log("need some extra food");
 
-// use logial or for conditions
-let args ;
-args = args || "jude";
-console.log("argument is : ",args);
+// // use logial or for conditions
+// let args ;
+// args = args || "jude";
+// console.log("argument is : ",args);
 
-// coma operator
-let x = 1;
-x = (x++, x);
-console.log(x);  // expected output
+// // coma operator
+// let x = 1;
+// x = (x++, x);
+// console.log(x);  // expected output
 
-x = (2,3);
-console.log("x is now " ,x);
+// x = (2,3);
+// console.log("x is now " ,x);
 
-// filter unique values in an array *Important
-const num = [1,1,2,3,8,3,2,2,1,3,4,47,7,3,2,2];
-const uniqueArray = [...new Set(num)];
-console.log(uniqueArray);
+// // filter unique values in an array *Important
+// const num = [1,1,2,3,8,3,2,2,1,3,4,47,7,3,2,2];
+// const uniqueArray = [...new Set(num)];
+// console.log(uniqueArray);
 
-console.log(num || []) // if array  then console array elements otherwise console 0;
+// console.log(num || []) // if array  then console array elements otherwise console 0;
 
-// simple conditional *Important
-let count = "1" ;
-// traditional way
-if(count) {
-    console.log(count);
-} else {
-    console.log("Not available");
-}
+// // simple conditional *Important
+// let count = "1" ;
+// // traditional way
+// if(count) {
+//     console.log(count);
+// } else {
+//     console.log("Not available");
+// }
 
-// simple and optimised way
-console.log(count || "Not available");
+// // simple and optimised way
+// console.log(count || "Not available");
 
-const isTrue = !0;
-const isFalse = !1;
-const alsoFalse = !!0;
+// const isTrue = !0;
+// const isFalse = !1;
+// const alsoFalse = !!0;
 
-// creating completely empty objects
-let obj = Object.create(null);
-console.log(typeof(obj));
+// // creating completely empty objects
+// let obj = Object.create(null);
+// console.log(typeof(obj));
 
-// truncate elements in an array
-let fruits = ["orange","apple","mango","cherry","pineapple","grapes"];
-fruits.length = 3;
-console.log(fruits);
+// // truncate elements in an array
+// let fruits = ["orange","apple","mango","cherry","pineapple","grapes"];
+// fruits.length = 3;
+// console.log(fruits);
 
-// merging off objects // if there where not in same keyname
-let obj1 = {"name":"ajay","age" : 22};
-let obj2 = {"client" :"july"};
+// // merging off objects // if there where not in same keyname
+// let obj1 = {"name":"ajay","age" : 22};
+// let obj2 = {"client" :"july"};
 
-const mergeObject = (obj1,obj2) => {
-for (let key in obj2){
-  if(obj2.hasOwnProperty(key)) obj1[key] = obj2[key];
-}
-return obj1;
-}
+// const mergeObject = (obj1,obj2) => {
+// for (let key in obj2){
+//   if(obj2.hasOwnProperty(key)) obj1[key] = obj2[key];
+// }
+// return obj1;
+// }
 
-// console.log(mergeObject(obj1,obj2));
+// // console.log(mergeObject(obj1,obj2));
 
-let one = 1, two = 2, three = 3;
-console.log(one && two && three);
+// let one = 1, two = 2, three = 3;
+// console.log(one && two && three);
 
-// easy convertion to string
-let num = 2;
-console.log(typeof num);
+// // easy convertion to string
+// let num = 2;
+// console.log(typeof num);
 
-num += "";
-console.log(num);
-console.log(typeof num);
+// num += "";
+// console.log(num);
+// console.log(typeof num);
 
-// easy convertion to number
-let  strNum = "15";
-console.log(typeof strNum);
- strNum = +strNum;
- console.log(strNum);
- console.log(typeof strNum);
- console.log(+true);
- console.log(+false);
+// // easy convertion to number
+// let  strNum = "15";
+// console.log(typeof strNum);
+//  strNum = +strNum;
+//  console.log(strNum);
+//  console.log(typeof strNum);
+//  console.log(+true);
+//  console.log(+false);
 
-//  quick power
-console.log(2**3);
-console.log(2 << 2); //equal to 2**3 . this operator means Math.pow(2,(n-1))
+// //  quick power
+// console.log(2**3);
+// console.log(2 << 2); //equal to 2**3 . this operator means Math.pow(2,(n-1))
 
-// quicker way to float to integer .if you are sure its a float value.
-console.log(28.55 | 0);
-console.log(33.44 | 0);
+// // quicker way to float to integer .if you are sure its a float value.
+// console.log(28.55 | 0);
+// console.log(33.44 | 0);
 
-//remove last element  usual way
-let srt = "1553";
-console.log(srt.substring(0, srt.length - 1));
-console.log(srt);
+// //remove last element  usual way
+// let srt = "1553";
+// console.log(srt.substring(0, srt.length - 1));
+// console.log(srt);
 
-// quicker way
-console.log((srt / 100) | 0);
-console.log((12342 / 10) | 0);
+// // quicker way
+// console.log((srt / 100) | 0);
+// console.log((12342 / 10) | 0);
 
-// // get last item of array
-let color = ["red","green","orange","blue","white"];
-// console.log(color.splice(-1)); // return last one item
-console.log(color.splice(-3)); // return last 3 items
+// // // get last item of array
+// let color = ["red","green","orange","blue","white"];
+// // console.log(color.splice(-1)); // return last one item
+// console.log(color.splice(-3)); // return last 3 items
 
-// Format json code
-console.log(JSON.stringify({"name":"july","age":32},null,'\t'));
+// // Format json code
+// console.log(JSON.stringify({"name":"july","age":32},null,'\t'));
 
-for(let i = 0;i < color.length;i++) {
-  console.log(color[i]);
-}
+// for(let i = 0;i < color.length;i++) {
+//   console.log(color[i]);
+// }
 
-for(let i=0,len = color.length;i < len;i++) {
-console.log(color[i]);
-}
+// for(let i=0,len = color.length;i < len;i++) {
+// console.log(color[i]);
+// }
 
-// Default values using  || operator 
-function User(name,age) {
-    this.name = name || "Oliver Queen";
-    this.age = age || 17;
-}
+// // Default values using  || operator 
+// function User(name,age) {
+//     this.name = name || "Oliver Queen";
+//     this.age = age || 17;
+// }
 
-let user1 = new User();
-console.log(user1.name);
-console.log(user1.age);
+// let user1 = new User();
+// console.log(user1.name);
+// console.log(user1.age);
 
- let user2 = new User("Smith",33);
- console.log(user2.name);
- console.log(user2.age);
+//  let user2 = new User("Smith",33);
+//  console.log(user2.name);
+//  console.log(user2.age);
+
+//  replace string all
+let string ="john john";
+console.log(string.replace(/hn/,"ana"));
+console.log(string.replace(/hn/g,"ana"));
+
+// mergin arrays
+const arr1 = [1,2,3,4];
+const arr2 = [5,6,2,4,9];
+// console.log(arr1.concat(arr2));
+console.log(arr1.push.apply(arr1,arr2));
