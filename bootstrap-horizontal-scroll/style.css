@@ -1,0 +1,23 @@
+.items-container {
+  overflow: auto;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+.item {
+  height: 300px;
+  border-radius: 8px;
+  width: 500px;
+  float: none !important;
+  display: inline-block !important;
+}
+@media (max-width: 768px) {
+  .item {
+    height: 300px;
+    border-radius: 8px;
+    width: 300px;
+    float: none !important;
+    display: inline-block !important;
+    margin: 0 10%;
+  }
+}
