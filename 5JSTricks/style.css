@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding:0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -11,4 +12,5 @@ body{
 body > div{
     padding:10vh;
     border: 2px solid grey;
+    margin: 10px;
 }
