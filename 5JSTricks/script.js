@@ -41,7 +41,13 @@ return a;
 console.log(fruitPrices)
 
 // 3.destructing tricks
-const colors ={name:"red",price:2};
+const colors ={name:"red",price:2,sub:{view:"top view"}};
 const {price} = colors;
-result.innerHTML += `<br> ${price}`
+result.innerHTML += `<br> ${price}`;
+const {sub: {view}} = colors;
+result.innerHTML += `<br> ${view}`;
+
+const numbers = [2,5,1,4,3,7];
+const [first] = numbers.sort();
+result.innerHTML += " " +first
        
