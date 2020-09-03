@@ -2,16 +2,17 @@
   overflow: auto;
   max-width: 100%;
   white-space: nowrap;
+  scroll-behavior: auto;
 }
 
 .item {
-  height: 300px;
+  max-height: 100vh;
+  height: 95vh;
   border-radius: 8px;
-  width: 500px;
-  float: none !important;
+  width: 100vw;
+  margin: auto;
   display: inline-block !important;
 }
-
 @media (max-width: 768px) {
   .item {
     height: 300px;
