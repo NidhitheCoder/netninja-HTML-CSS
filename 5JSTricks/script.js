@@ -1,3 +1,4 @@
+
 // 1. query selectors
 document.getElementById("name").addEventListener("click", () => {
   let element = document.querySelector(".name span");
@@ -49,5 +50,34 @@ result.innerHTML += `<br> ${view}`;
 
 const numbers = [2,5,1,4,3,7];
 const [first] = numbers.sort();
-result.innerHTML += " " +first
+result.innerHTML += " " +first;
+
+
+// 4. Promises
+
+// // normal way 
+// let res = fetch("https://google.com");
+// let res1 = fetch("https://facebook.com");
+// let res2 = fetch("https://instagram.com");
+
+// put urls into an array
+let urls = [
+    "https://google.com",
+    "https://facebook.com",
+    "https://instagram.com"
+];
+
+// const requests = urls.map(url =>  fetch(url));
+// const responses = promise.all(requests);
+// console.log(responses);
+
+(async() => {
+
+const responses = [];
+for(let url of urls) {
+    const res = await fetch(url);
+    responses.push(res);
+}
+console.log(responses)
+})();
        
