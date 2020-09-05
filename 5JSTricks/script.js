@@ -81,3 +81,14 @@ for(let url of urls) {
 console.log(responses)
 })();
        
+
+
+// 5. Try catch method
+
+try{
+//   code that  you want to execute
+}
+catch(e){
+    //  code that you want to execute when you get error.
+}
+
