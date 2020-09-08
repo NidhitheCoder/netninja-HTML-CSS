@@ -36,12 +36,11 @@ body {
   justify-content: center;
 }
 
-
-.card{
-  border:1px solid  #333;
+.card {
+  border: 1px solid #333;
   background-color: #111;
   color: #fff;
   height: 300px;
-  width:300px;
+  width: 300px;
   font-size: 14px;
 }
