@@ -7,12 +7,17 @@
 
 .item {
   max-height: 100vh;
-  height: 95vh;
+  height: 55vh;
   border-radius: 8px;
-  width: 100vw;
+  width: 80vw;
   margin: auto;
   display: inline-block !important;
 }
+
+.button-nav{
+margin: 3vh;
+}
+
 @media (max-width: 768px) {
   .item {
     height: 300px;
