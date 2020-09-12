@@ -1,17 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+background: #111;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 .items-container {
   overflow: auto;
   max-width: 100%;
   white-space: nowrap;
+  scroll-behavior: auto;
 }
 
 .item {
-  height: 300px;
+  max-height: 100vh;
+  height: 55vh;
   border-radius: 8px;
-  width: 500px;
-  float: none !important;
+  width: 80vw;
+  margin: auto;
   display: inline-block !important;
+ padding: 30vh 40vw;
 }
 
+<<<<<<< HEAD
+=======
+.button-nav{
+margin: 3vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.button-nav span{
+  color:white;
+  letter-spacing: 3px;
+  margin: 0 20px;
+}
+
+>>>>>>> 2410b510d71bfca83e322a0bdaf9e98ea3525b70
 @media (max-width: 768px) {
   .item {
     height: 300px;
