@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>testimonial scroll</title>
+  </head>
+
+  <body>
+    <!-- <h1>testimonial scroll</h1> -->
+    <div class="testominals">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="layer"></div>
+              <div class="content">
+                <img src="assets/img7.jpeg" />
+                <h1>Smith</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque optio esse natus alias harum nihil, nemo mollitia
+                  voluptas quas praesentium consequatur. Ad quidem assumenda
+                  magni ea enim accusamus nesciunt iste.
+                </p>
+                <div class="imgBx"></div>
+                <div class="details">
+                  Someone famous<br /><span>Web designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="layer"></div>
+              <div class="content">
+                <img src="assets/img2.jpeg" />
+                <h1>Michel Johnson</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat itaque voluptates omnis nemo soluta non. Quas dicta,
+                  mollitia velit iste odio officia voluptate odit eius nam,
+                  molestias, in repellat soluta.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="layer"></div>
+              <div class="content">
+                <img src="assets/img4.jpeg" />
+                <h1>Alfred Marshal</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates, rem! Cumque, ipsam autem? Soluta, libero, cum
+                  mollitia et ullam dicta perferendis in dignissimos est saepe
+                  recusandae beatae iste molestiae sunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="layer"></div>
+              <div class="content">
+                <img src="assets/img6.jpeg" />
+                <h1>Jonathan trott</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                  tenetur voluptatem aliquam voluptas! Inventore officiis non
+                  quia quidem ex quisquam alias qui tempora. Minima neque fuga
+                  harum libero, perspiciatis aspernatur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      let swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverFlowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true
+        },
+        loop: true
+      });
+    </script>
+  </body>
+</html>

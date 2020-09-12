@@ -28,6 +28,8 @@ justify-content: center;
  padding: 30vh 40vw;
 }
 
+<<<<<<< HEAD
+=======
 .button-nav{
 margin: 3vh;
 display: flex;
@@ -41,6 +43,7 @@ align-items: center;
   margin: 0 20px;
 }
 
+>>>>>>> 2410b510d71bfca83e322a0bdaf9e98ea3525b70
 @media (max-width: 768px) {
   .item {
     height: 300px;
