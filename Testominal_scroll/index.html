@@ -27,9 +27,16 @@
                   voluptas quas praesentium consequatur. Ad quidem assumenda
                   magni ea enim accusamus nesciunt iste.
                 </p>
-                <div class=""></div>
+                <div class="imgBx">
+                  <img src="" />
+                </div>
+                <div class="details">
+                  Someone famous<br /><span>Web designer</span>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="swiper-slide">
             <div class="card">
               <div class="layer"></div>
               <div class="content">
@@ -41,6 +48,8 @@
                 </p>
               </div>
             </div>
+          </div>
+          <div class="swiper-slide">
             <div class="card">
               <div class="layer"></div>
               <div class="content">
@@ -52,6 +61,8 @@
                 </p>
               </div>
             </div>
+          </div>
+          <div class="swiper-slide">
             <div class="card">
               <div class="layer"></div>
               <div class="content">
@@ -63,77 +74,26 @@
                 </p>
               </div>
             </div>
-            <div class="card">
-              <div class="layer"></div>
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                  perspiciatis placeat fugit nulla facere aperiam sunt. Odio
-                  laboriosam enim cupiditate expedita neque quos exercitationem
-                  consectetur iusto quia tempora, inventore minima.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="layer"></div>
-              <div class="content">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium earum officia impedit veniam quo, quas sit quidem
-                  velit, dolore necessitatibus assumenda sunt. Dolorum officia
-                  iste sit veritatis asperiores nam necessitatibus.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="layer"></div>
-              <div class="content">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti ratione sequi, voluptate delectus ducimus
-                  exercitationem alias ad et culpa? Repudiandae numquam rem
-                  saepe quod optio eligendi accusamus ab minus provident?
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="layer"></div>
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                  voluptatem sapiente nobis ipsa, sunt asperiores tempore fugit
-                  est in rerum nesciunt dolor id blanditiis numquam minima? In
-                  natus qui nobis!
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="layer"></div>
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
-                  voluptate neque eius aspernatur error, commodi quam omnis
-                  earum consectetur cupiditate similique perspiciatis fuga
-                  blanditiis sunt reiciendis ad laborum perferendis dolore.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="layer"></div>
-              <div class="content">
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-                  impedit explicabo repellat expedita molestias alias non, omnis
-                  odio at fuga, vero eos architecto. Tenetur nam repellat quidem
-                  ducimus, animi repudiandae?
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+    let swiper = new Swiper(".swiper-container", {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverFlowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+   loop:true
+});
+    </script>
   </body>
 </html>
