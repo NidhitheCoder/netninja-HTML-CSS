@@ -20,3 +20,7 @@
 .page:nth-child(2) {
   background: #3423;
 }
+
+.page:nth-child(3){
+  background: fuchsia;
+}
