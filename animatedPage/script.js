@@ -1,5 +1,5 @@
-let caption = document.getElementById("caption");
+let body = document.getElementById("main");
 
-caption.addEventListener("click", () => {
-  caption.style.color = "green";
+body.addEventListener("scroll", () => {
+  body.style.background = "green";
 });

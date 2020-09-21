@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+.page {
   background: #333;
   color: #fff;
   text-shadow: #fff;
@@ -14,4 +14,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+
+.page:nth-child(2) {
+  background: #3423;
 }
