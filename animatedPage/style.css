@@ -24,3 +24,40 @@
 .page:nth-child(3){
   background: fuchsia;
 }
+
+.circle{
+  background:green;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.circle:nth-child(1){
+left:1%;
+top:4%;
+}
+.circle:nth-child(2){
+left:90%;
+top:78%;
+}
+
+.circle:nth-child(3){
+left:33%;
+top:33%;
+}
+
+.circle:nth-child(4){
+left:12;
+top:47%;
+}
+
+.circle:nth-child(5){
+left:46;
+top:99%;
+}
+
+.circle:nth-child(6){
+left:45%;
+top:23%;
+}
