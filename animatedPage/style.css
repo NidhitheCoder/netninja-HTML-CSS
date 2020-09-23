@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
 }
 
 .page:nth-child(2) {
@@ -23,4 +24,41 @@
 
 .page:nth-child(3){
   background: fuchsia;
+}
+
+.circle{
+  background:green;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.circle:nth-child(1){
+left:1%;
+top:4%;
+}
+.circle:nth-child(2){
+left:90%;
+top:78%;
+}
+
+.circle:nth-child(3){
+left:33%;
+top:14%;
+}
+
+.circle:nth-child(4){
+left:12;
+top:77%;
+}
+
+.circle:nth-child(5){
+left:6%;
+top:29%;
+}
+
+.circle:nth-child(6){
+left:90%;
+top:23%;
 }
