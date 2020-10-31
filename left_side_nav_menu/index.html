@@ -7,8 +7,27 @@
     <link rel="stylesheet" href="style.css" />
     <title>Left Side menu Bar</title>
   </head>
+
   <body>
-    <div>Left side menu bar</div>
-    <div>Right side content section</div>
+    <div id="main-box" onclick="openMenu()">&#9776;</div>
+    <div id="menu" class="sidemenu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Login</a>
+      <a href="#" class="close-btn" onclick="closeMenu()">&times;</a>
+    </div>
+    <div class="content">Right side content section</div>
+    <script type="text/javascript">
+      const openMenu = () => {
+        document.getElementById("menu").style.width = "15vw";
+        document.getElementById('main-box').style.display="hidden";
+      };
+
+      const closeMenu = () => {
+        document.getElementById("menu").style.width = "0vw";
+        document.getElementById("main-box").style.display="block";
+      };
+    </script>
   </body>
 </html>
