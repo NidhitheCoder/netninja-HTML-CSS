@@ -1,3 +1,7 @@
+body {
+  background-color: #333;
+  font-family: sans-serif;
+}
 .card-container {
   display: flex;
   width: 80vw;
@@ -39,13 +43,25 @@
 }
 
 .card p {
-  display: none;
   color: white;
-  transition: all 1s ease-in-out;
-  font-size: 10px;
+  opacity: 0;
+  transition: opacity 4s;
 }
 
 .card:hover p {
-  display: flex;
+  opacity: 1;
   font-size: 18px;
+}
+
+.line {
+  width: 0px;
+  height: 4px;
+  background-image: linear-gradient(to right, red, yellow);
+  opacity: 0;
+  transition: opacity 3s, width 2s;
+}
+
+.card:hover .line {
+  opacity: 1;
+  width: 100px;
 }
