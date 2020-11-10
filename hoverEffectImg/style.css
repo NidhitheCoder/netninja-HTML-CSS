@@ -8,6 +8,8 @@
 }
 
 .card {
+  background-size: cover;
+  background-position: center;
   height: 300px;
   width: 20%;
   margin: 1vw;
@@ -20,30 +22,30 @@
   align-items: center;
 }
 
-.card:hover{
-    width: 50vw;
+.card:hover {
+  width: 50vw;
 }
 
-.card:nth-child(1){
-    background-image: url(one.png);
+.card:nth-child(1) {
+  background-image: url(one.png);
 }
 
-.card:nth-child(2){
-    background-image: url(two.jpg);
+.card:nth-child(2) {
+  background-image: url(two.jpg);
 }
 
-.card:nth-child(3){
-    background-image: url(three.jpeg);
+.card:nth-child(3) {
+  background-image: url(three.jpeg);
 }
 
-.card p{
-    display: none;
-    color: white;
-    transition: all 1s ease-in-out;
-    font-size: 10px;
+.card p {
+  display: none;
+  color: white;
+  transition: all 1s ease-in-out;
+  font-size: 10px;
 }
 
-.card:hover p{
-    display: flex;
-    font-size: 18px;
+.card:hover p {
+  display: flex;
+  font-size: 18px;
 }
