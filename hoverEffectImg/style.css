@@ -1,0 +1,67 @@
+body {
+  background-color: #333;
+  font-family: sans-serif;
+}
+.card-container {
+  display: flex;
+  width: 80vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 20%;
+  margin: 1vw;
+  transition: width 2s;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  width: 50vw;
+}
+
+.card:nth-child(1) {
+  background-image: url(one.png);
+}
+
+.card:nth-child(2) {
+  background-image: url(two.jpg);
+}
+
+.card:nth-child(3) {
+  background-image: url(three.jpeg);
+}
+
+.card p {
+  color: white;
+  opacity: 0;
+  transition: opacity 4s;
+}
+
+.card:hover p {
+  opacity: 1;
+  font-size: 18px;
+}
+
+.line {
+  width: 0px;
+  height: 4px;
+  background-image: linear-gradient(to right, red, yellow);
+  opacity: 0;
+  transition: opacity 3s, width 2s;
+}
+
+.card:hover .line {
+  opacity: 1;
+  width: 100px;
+}
