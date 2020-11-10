@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  height:60vh;
+}
+
+.blue{
+    background: rgb(103, 106, 238);
+    height:100%;
+    display: flex;
+    padding:10px;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.red{
+    background: rgb(218, 82, 82);
+    width:200px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+.blue h1{
+  display: inline;
+  writing-mode: sideways-lr;
+  vertical-align: bottom;
+  text-align: start;
+  padding:5px;
+}
+
