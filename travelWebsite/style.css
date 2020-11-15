@@ -1,5 +1,161 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #111;
+}
+
+section {
+  position: relative;
+  padding: 100px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.header .toggle img {
+  max-width: 40px;
+  cursor: pointer;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to top, #111, transparent);
+}
+
+.banner .content {
+  position: relative;
+  max-width: 900px;
+  text-align: center;
+  z-index: 1;
+}
+
+.banner .content h2 {
+  color: #fff;
+  font-size: 5em;
+}
+
+.banner .content p {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+}
+
+.fitBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .contentBx {
+  min-width: 50%;
+  width: 50%;
+  text-align: end;
+  padding-right: 40px;
+}
+
+.titleText {
+  font-weight: 600;
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 1em;
+  color: #fff;
+}
+
+.about .imgBx {
+  position: relative;
+  min-width: 50%;
+  width: 50%;
+  min-height: 500px;
+}
+
+/* banner 2 */
+.banner2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to top, #111, transparent);
+}
+
+.banner2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to bottom, #111, transparent);
 }
