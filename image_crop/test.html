@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Image Processs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.15/css/jquery.Jcrop.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.15/js/jquery.Jcrop.js"></script>
+    <style>
+      .result {
+        display: block;
+        margin: 0 15px;
+        border: 1px solid green;
+        width: 80px;
+        height: 20px;
+        text-align: center;
+        padding: 3px;
+      }
+      .result-container {
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .img {
+        height: 300px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./img.jpg" alt="" id="image" class="img" />
+
+    <div class="result-container">
+      X is :
+      <label id="resultX" class="result"></label>
+      Y is :
+      <label id="resultY" class="result"></label>
+      X1 is :
+      <label id="resultX1" class="result"></label>
+      Y1 is :
+      <label id="resultY1" class="result"></label>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        $("#image").Jcrop({
+          onSelect: function(c) {
+            console.log(c);
+            $("#resultX").text(c.x);
+            $("#resultY").text(c.y);
+            $("#resultX1").text(c.x);
+            $("#resultY1").text(c.y);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
