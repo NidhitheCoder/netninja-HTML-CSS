@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Animated X'mas banner</title>
+</head>
+
+<body>
+  <section>
+    <div class="box">
+      <div class="circle">
+        <h2>
+          Happy <br />
+          Christmas
+        </h2>
+      </div>
+    </div>
+    <i></i>
+  </section>
+
+  <script>
+    function bubbles() {
+      let count = 250;
+      let section = document.querySelector("section");
+      let i = 0;
+      while (i < count) {
+        let bubble = document.createElement('i');
+        let x = Math.floor(Math.random() * window.innerWidth);
+        let y = Math.floor(Math.random() * window.innerHeight);
+        let size = Math.random() * 10;
+        bubble.style.left = x + "px";
+        bubble.style.top = y + "px";
+        bubble.style.width = 1 + size + "px";
+        bubble.style.height = 1 + size + "px";
+        bubble.style.animationDuration = 3 + size + 's';
+        bubble.style.animationDelay = -size + 's'
+
+        section.appendChild(bubble);
+        i++;
+      }
+    }
+
+    bubbles();
+  </script>
+</body>
+
+</html>
