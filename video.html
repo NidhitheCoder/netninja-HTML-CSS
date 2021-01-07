@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <button
+        style="height:50px;width:50px;z-index:20;position:absolute;left:50%;top:50%"
+        onClick="(function(){
+        let video = document.getElementById('video111');
+        video.paused ? video.play():video.pause();
+        return false;
+    })();return false;"
+      ></button>
+      <video
+        id="video111"
+        src="https://www.vonnue.com/assets/video/main-video/out-480.mp4"
+        poster="https://blog.addpipe.com/content/images/size/w700h329/2020/09/bert-sz-iEh0ljA7GNM-unsplash-1.jpg"
+      ></video>
+    </div>
+
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non modi
+      voluptatum distinctio accusamus et doloribus asperiores repellat nihil
+      commodi dolore dignissimos, blanditiis esse molestias eaque cum! Corrupti
+      sequi ipsa nesciunt pariatur expedita neque quod odit sapiente. Excepturi
+      blanditiis voluptatum optio animi quisquam vero unde vel tempore quibusdam
+      laudantium ducimus, distinctio architecto dolorum dicta eos non molestiae
+      cumque doloremque aperiam. Nihil sequi aspernatur officiis ad accusantium,
+      dolore fuga natus soluta dignissimos, facilis, iusto eius non. Labore
+      nobis esse optio vero, eius fugit? Pariatur distinctio inventore
+      aspernatur sed adipisci ipsum, excepturi exercitationem doloremque
+      incidunt modi delectus repellat ex ipsa, obcaecati eum eligendi fugiat
+      illo. Repudiandae rem aperiam cum tempora non consequuntur velit mollitia
+      autem quidem doloribus fuga, dignissimos libero sapiente? Tenetur
+      provident excepturi sed facilis cum, voluptates quaerat consectetur, animi
+      sapiente soluta numquam magni dolore iusto nemo? Rerum maiores voluptate
+      iure in sapiente dicta hic ullam ducimus deleniti accusantium nam,
+      cupiditate, dolore mollitia eius quos, doloremque ratione saepe corrupti!
+      Id atque minima ab omnis tempore, quaerat velit blanditiis, sit
+      repellendus quas pariatur quae ullam consectetur vitae odio, autem unde!
+      Corrupti nulla modi voluptas at debitis explicabo fugiat quo. Temporibus,
+      quo. Atque, odit dignissimos beatae voluptas veniam ullam necessitatibus,
+      mollitia non perferendis ipsa modi saepe nemo voluptate vel accusantium
+      doloremque aspernatur nobis distinctio? Voluptatem in tempora dignissimos
+      temporibus atque sed placeat, perspiciatis quam eum. Iste autem veritatis,
+      temporibus reprehenderit illum voluptates quo ducimus quae deleniti
+      deserunt accusamus, cupiditate necessitatibus sit, eum voluptatem! Velit
+      vero, tenetur deleniti ducimus eum in corrupti cum suscipit? Nam voluptas
+      hic perspiciatis aspernatur assumenda reiciendis, quibusdam omnis esse, ea
+      fugit corporis laborum quo facilis, nostrum rerum. Neque nulla libero
+      aliquam sit est alias minima, ab nam voluptatibus, aspernatur quis eius.
+      Rem doloremque ab amet eligendi recusandae optio maxime est at voluptate
+      quis voluptatem, architecto vitae cumque magnam necessitatibus deleniti,
+      aliquid culpa ex magni hic tenetur quam consectetur nihil asperiores.
+      Dolores fugit pariatur quisquam temporibus aut assumenda molestias
+      eligendi ex quam, sed laborum vitae ipsum voluptate ab perferendis quod, a
+      suscipit praesentium velit explicabo eius, magni fugiat facere. Ipsa
+      blanditiis dolor quis, quae, voluptates a voluptatem quidem fuga sapiente
+      nam ipsam provident, suscipit alias quia laudantium! Possimus consequuntur
+      accusantium iure quibusdam cupiditate, iste porro. Libero error, aperiam
+      officia, veniam soluta cupiditate et nemo voluptas corporis blanditiis
+      illo consequuntur quas voluptates inventore nulla quisquam a mollitia.
+      Eaque commodi consequuntur, rem totam, voluptates velit repudiandae ipsam
+      ullam facilis dolore mollitia veniam qui numquam incidunt sapiente sit,
+      recusandae error optio minus quidem quasi nobis perferendis? Dolorem,
+      architecto voluptate nam temporibus facilis dignissimos sed aperiam vero
+      reprehenderit, maiores impedit expedita corrupti exercitationem,
+      recusandae repellat? Totam sequi mollitia repellat temporibus saepe, eos
+      possimus iusto! Adipisci rem nulla pariatur amet, enim ab quo vel hic ea
+      excepturi mollitia, eius impedit quasi, non reprehenderit? Distinctio
+      nostrum dolorem laboriosam vitae? Alias, aut nam. Provident corporis ad
+      obcaecati asperiores odit labore inventore illum voluptatibus dolores nam
+      facilis ratione, hic repellat blanditiis. Nobis quisquam, perspiciatis vel
+      quaerat sed nostrum nesciunt non! Exercitationem voluptatem excepturi
+      fugiat aliquam? Accusamus quas quos magnam!
+      <br /><br />
+    </div>
+
+    <div id="container">
+      <video
+        id="videoNew"
+        src="https://www.vonnue.com/assets/video/main-video/out-480.mp4"
+        poster="https://blog.addpipe.com/content/images/size/w700h329/2020/09/bert-sz-iEh0ljA7GNM-unsplash-1.jpg"
+      ></video>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function(event) {
+        var elem = document.getElementById("container");
+        var bounding = elem.getBoundingClientRect();
+
+        // Returns something like this:
+        // {top: -123, left: 0, right: 0, bottom: 25}
+        console.log(bounding);
+
+        if (bounding.top < 0) {
+          // Top is out of viewport
+        }
+
+        if (bounding.left < 0) {
+          // Left side is out of viewoprt
+        }
+
+        if (
+          bounding.bottom >
+          (window.innerHeight || document.documentElement.clientHeight)
+        ) {
+          // Bottom is out of viewport
+        }
+
+        if (
+          bounding.right >
+          (window.innerWidth || document.documentElement.clientWidth)
+        ) {
+          // Right side is out of viewport
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!-- For html5 video tag details -->
+<!-- https://www.w3.org/2010/05/video/mediaevents.html  -->
