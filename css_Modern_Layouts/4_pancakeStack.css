@@ -1,0 +1,24 @@
+.parent {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.element1{
+    width:100%;
+    background-color: rgb(141, 238, 141);
+    /* margin:10px 0; */
+} 
+
+.element2{
+    width:100%;
+    background-color: aqua;
+    /* margin:10px 0; */
+} 
+
+.element3{
+    width:100%;
+    background-color: rosybrown;
+    /* margin:10px 0; */
+}

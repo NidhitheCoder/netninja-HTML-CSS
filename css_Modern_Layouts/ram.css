@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.parent {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* If here it is auto-fill  then increase the size not going to be expanding to remining spaces */
+  min-height: 100vh;
+}
+
+.child:nth-child(1) {
+  background-color: aqua;
+}
+
+.child:nth-child(2) {
+  background-color: orange;
+}
+
+.child:nth-child(3) {
+  background-color: rosybrown;
+}
+
+.child:nth-child(4) {
+  background-color: blueviolet;
+}
