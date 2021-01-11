@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.parent{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card{
+    width: clamp(23ch,50%,46ch);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: aqua;
+}
+
+.visible{
+    width: 100%;
+    height: 80px;
+    background-color: rosybrown;
+}
