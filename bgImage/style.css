@@ -1,4 +1,24 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-img {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(ds.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-heading {
+  text-align: center;
+  color: #fff;
+}
+
+.content-text {
+  text-align: center;
+  color: #fff;
 }
