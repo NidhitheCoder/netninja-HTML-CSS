@@ -4,21 +4,36 @@
 }
 
 .bg-img {
-  min-height: 100vh;
-  width: 100%;
-  background-image: url(ds.png);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.bg-img::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url(ds.png);
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.5;
 }
 
 .content-heading {
+  position: relative;
   text-align: center;
-  color: #fff;
+  color: green;
 }
 
 .content-text {
+  position: relative;
   text-align: center;
-  color: #fff;
+  color: red;
 }
