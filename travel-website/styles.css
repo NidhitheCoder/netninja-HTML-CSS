@@ -47,3 +47,17 @@
   text-align: justify;
   width: unset !important;
 }
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card{
+  width:150px;
+  height: 250px;
+  background-color: orange;
+  margin:3px;
+}
