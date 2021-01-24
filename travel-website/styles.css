@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.landing-container {
+  text-align: center;
+  height: 100vh;
+  background: url(assets/landing-banner.jpeg);
+}
+
+.basic-container {
+  width: 100%;
+  padding: 3rem;
+  color: beige;
+}
+
+.row {
+  height: 100%;
+}
+
+.content-container {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: cadetblue;
+}
+
+.img-box {
+  width: 70%;
+  border: 5px solid #3333;
+}
+
+.content-img {
+  width: 70%;
+}
+
+.img {
+  width: 100%;
+}
+
+.list-items {
+  color: green;
+  text-align: justify;
+  width: unset !important;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card{
+  width:150px;
+  height: 250px;
+  background-color: orange;
+  margin:3px;
+}
