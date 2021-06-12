@@ -384,8 +384,10 @@ body {
 
 .rating-img-container {
   height: 23px;
-  width: 133px;
+  width: 132px;
   background-image: url("img/business/rating.png");
+  background-repeat: none !important;
+  background-position-y: 560px;
 }
 
 .hot-rating span {
