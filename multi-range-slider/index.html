@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Multi range slider</title>
+  </head>
+  <body>
+    <div class="middle">
+      <div class="multi-range-slider">
+        <input type="range" id="input-left" min="0" max="100" value="25" />
+        <input type="range" id="input-right" min="0" max="100" value="75" />
+
+        <div class="slider">
+          <div class="track"></div>
+          <div class="range"></div>
+          <div class="thumb left"></div>
+          <div class="thumb right"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const inputLeft = document.getElementById("input-left");
+      const inputRight = document.getElementById("input-right");
+
+      const thumbLeft = document.querySelector(".slider > .thumb.left");
+      const thumbRight = document.querySelector(".slider > .thumb.right");
+      const range = document.querySelector(".slider > .range");
+
+      const setLeftValue = () => {
+        let _this = inputLeft,
+          min = _this.min,
+          max = _this.max;
+
+        _this.value = Math.min(
+          parseInt(_this.value),
+          parseInt(inputRight.value) - 1
+        );
+
+        const percent = ((_this.value - min) / (max - min)) * 100;
+        thumbLeft.style.left = percent + "%";
+
+        range.style.left = percent + "%";
+      };
+
+      setLeftValue();
+
+      const setRightValue = () => {
+        let _this = inputRight,
+          min = _this.min,
+          max = _this.max;
+
+        _this.value = Math.max(
+          parseInt(_this.value),
+          parseInt(inputLeft.value) + 1
+        );
+
+        const percent = ((_this.value - min) / (max - min)) * 100;
+
+        thumbRight.style.right = (100 - percent) + "%";
+        range.style.right = (100 - percent) + "%";
+      };
+    //   setRightValue();
+
+      inputLeft.addEventListener("input", setLeftValue);
+      inputRight.addEventListener("input", setRightValue);
+    </script>
+  </body>
+</html>
