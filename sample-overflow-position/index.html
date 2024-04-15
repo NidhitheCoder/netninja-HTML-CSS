@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      #container {
+        width: 90vw;
+        height: 5vh;
+        background: orange;
+        overflow: scroll;
+      }
+      #slider {
+        width: 7200px;
+        height: 3vh;
+        position: relative;
+      }
+
+      #box {
+        width: 2%;
+        height: 100%;
+        background: green;
+        border: 2px solid red;
+        position: absolute;
+        left: 2%;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="slider">
+        <div id="box" class="box"></div>
+      </div>
+    </div>
+    <script>
+      const box = document.getElementById("box");
+      const container = document.getElementById("container");
+      const slider = document.getElementById("slider");
+
+      // console.log('container', container.offsetLeft + container.offsetWidth)
+      // console.log('box', box.offsetLeft + box.offsetWidth)
+      box.addEventListener("click", (event) => {
+        box.style.left = "10%";
+        // console.log('container', container.offsetLeft + container.offsetWidth)
+        // console.log('box', box.offsetLeft + box.offsetWidth)
+      });
+    </script>
+  </body>
+</html>
